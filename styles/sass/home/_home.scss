@@ -10,6 +10,20 @@
 }
 
 .aboutus {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 15%;
+  &-text {
+    width: 50%;
+    &-title {
+    }
+    &-body {
+      &-text {
+      }
+    }
+  }
+  &-image {
+  }
 }
 
 /* The switch - the box around the slider */

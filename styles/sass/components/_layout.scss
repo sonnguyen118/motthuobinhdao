@@ -90,7 +90,6 @@ header .brand {
   // width: 600px;
   top: -10px;
   margin: 0px auto;
-  margin-left: -140px;
 }
 .logo-thumb {
   opacity: 0;
@@ -149,8 +148,8 @@ nav ul li.first-level .submenu {
   position: absolute;
   left: 0;
   padding: 28px 0 20px 0;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  // -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  // box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   display: block;
   opacity: 0;
   pointer-events: none;
@@ -514,22 +513,38 @@ header.scroll nav ul li.first-level.right span {
     justify-content: space-between;
     &-icon {
       color: #fff;
-      font-size: 18px;
+      font-size: 24px;
       padding-left: 60px;
-      padding-right: 1px;
+      padding-right: 10px;
+    }
+    &-icon:hover {
+      cursor: pointer;
     }
     &-text {
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
       width: 100px;
+    }
+    &-text:hover {
+      cursor: pointer;
     }
   }
   &-notifi {
     top: 5px;
     &-bell {
       &-icon {
-        font-size: 18px;
+        font-size: 24px;
       }
     }
   }
+}
+
+.image-logo-header {
+  width: 481px;
+  height: 82px;
+  margin-left: -100px;
+}
+.image-logo-baner {
+  width: 51px;
+  height: 51px;
 }

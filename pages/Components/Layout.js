@@ -84,20 +84,25 @@ export default function Layout({ title, children, description }) {
           <header className={navbar ? "" : "scroll"}>
             <div className="sticky-bg"></div>
             <a className="brand" href="http://pebbledesign.com/">
-              <Image
-                src={`/media/baner-logo-red-text-white.png`}
-                className="logo"
-                width={481}
-                height={82}
-                alt="description of image"
-              />
-              <Image
-                src={`/media/logo-red.png`}
-                className="logo-thumb"
-                width={51}
-                height={51}
-                alt="description of image"
-              />
+              <div className="image-logo-header">
+                <Image
+                  src={`/media/baner-logo-red-text-white.png`}
+                  className="logo"
+                  width={481}
+                  height={82}
+                  alt="description of image"
+                />
+              </div>
+              <div className="image-logo-baner">
+                <Image
+                  src={`/media/logo-red.png`}
+                  className="logo-thumb"
+                  layout="fill"
+                  data-testid="close-icon"
+                  objectFit="contain"
+                  alt="description of image"
+                />
+              </div>
             </a>
             <nav>
               <ul className={navbarHover ? "main-nav hover" : "main-nav"}>
