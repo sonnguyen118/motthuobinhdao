@@ -62,7 +62,7 @@ export default function Layout({ title, children, description }) {
           content="Web site created using create-react-app"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,500;1,900&display=swap"
           rel="stylesheet"
@@ -75,7 +75,7 @@ export default function Layout({ title, children, description }) {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></link>
         <title>Một Thuở Binh Đao 3D Studio &amp; Features | Criti 3D</title>
       </Head>
@@ -84,17 +84,19 @@ export default function Layout({ title, children, description }) {
           <header className={navbar ? "" : "scroll"}>
             <div className="sticky-bg"></div>
             <a className="brand" href="http://pebbledesign.com/">
-              <img
+              <Image
                 src={`/media/baner-logo-red-text-white.png`}
                 className="logo"
                 width={481}
                 height={82}
+                alt="description of image"
               />
-              <img
+              <Image
                 src={`/media/logo-red.png`}
                 className="logo-thumb"
                 width={51}
                 height={51}
+                alt="description of image"
               />
             </a>
             <nav>
@@ -122,6 +124,7 @@ export default function Layout({ title, children, description }) {
                           className="current"
                           width={242}
                           height={162}
+                          alt="description of image"
                         />
                         <div className="submenu-title">
                           <p className="submenu-title-text">
@@ -137,6 +140,7 @@ export default function Layout({ title, children, description }) {
                           className="current"
                           width={242}
                           height={162}
+                          alt="description of image"
                         />
                         <div className="submenu-title">
                           <p className="submenu-title-text">
@@ -152,6 +156,7 @@ export default function Layout({ title, children, description }) {
                           className="current"
                           width={242}
                           height={162}
+                          alt="description of image"
                         />
                         <div className="submenu-title">
                           <p className="submenu-title-text">
@@ -167,6 +172,7 @@ export default function Layout({ title, children, description }) {
                           className="current"
                           width={242}
                           height={162}
+                          alt="description of image"
                         />
                         <div className="submenu-title">
                           <p className="submenu-title-text">
@@ -191,6 +197,7 @@ export default function Layout({ title, children, description }) {
                           className="current"
                           width={242}
                           height={162}
+                          alt="description of image"
                         />
                         <div className="submenu-title">
                           Trung Hưng Liệt Truyện
@@ -204,6 +211,7 @@ export default function Layout({ title, children, description }) {
                           className="current"
                           width={242}
                           height={162}
+                          alt="description of image"
                         />
                         <div className="submenu-title">Truyền Kỳ Mạn Lục</div>
                       </a>
@@ -215,6 +223,7 @@ export default function Layout({ title, children, description }) {
                           className="current"
                           width={242}
                           height={162}
+                          alt="description of image"
                         />
                         <div className="submenu-title">Game - Giải Trí</div>
                       </a>

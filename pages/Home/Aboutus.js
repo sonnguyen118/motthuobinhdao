@@ -16,7 +16,12 @@ const Aboutus = () => {
         </div>
       </div>
       <div className="aboutus-image">
-        <Image src={`/media/abouts.png`} width={40} height={40} />
+        <Image
+          src={`/media/abouts.png`}
+          width={40}
+          height={40}
+          alt="description of image"
+        />
       </div>
     </div>
   );

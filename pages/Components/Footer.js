@@ -12,7 +12,8 @@ const Footer = () => {
               src={`/media/logo-red.png`}
               width={151}
               height={151}
-            ></Image>
+              alt="description of image"
+            />
             <h1 className="footer-header__col-title">SUBSCRIBE</h1>
             <input
               className="footer-header__col-input"
@@ -61,17 +62,17 @@ const Footer = () => {
           <div className="footer-header__col col">
             <h1 className="footer-header__col-title">TRỤ SỞ CHÍNH</h1>
             <div className="footer-header__col-text">
-              <i class="fa fa-volume-control-phone" />{" "}
+              <i className="fa fa-volume-control-phone" />{" "}
               <span className="footer-header__col-text-a">0981839980</span>
             </div>
             <div className="footer-header__col-text">
-              <i class="fa fa-envelope-o" />{" "}
+              <i className="fa fa-envelope-o" />{" "}
               <span className="footer-header__col-text-a">
                 infor@critistudio.com
               </span>
             </div>
             <div className="footer-header__col-text">
-              <i class="fa fa-home" />{" "}
+              <i className="fa fa-home" />{" "}
               <span className="footer-header__col-text-a">
                 Đô Lương - Đông Hưng - Thái Bình
               </span>
@@ -86,6 +87,7 @@ const Footer = () => {
                   src={`/media/facebook.png`}
                   width={40}
                   height={40}
+                  alt="description of image"
                 />
               </a>
 
@@ -98,6 +100,7 @@ const Footer = () => {
                   src={`/media/instagram.png`}
                   width={40}
                   height={40}
+                  alt="description of image"
                 />
               </a>
 
@@ -110,6 +113,7 @@ const Footer = () => {
                   src={`/media/linkedin.png`}
                   width={40}
                   height={40}
+                  alt="description of image"
                 />
               </a>
 
@@ -122,6 +126,7 @@ const Footer = () => {
                   src={`/media/tik-tok.png`}
                   width={40}
                   height={40}
+                  alt="description of image"
                 />
               </a>
 
@@ -134,6 +139,7 @@ const Footer = () => {
                   src={`/media/twitter.png`}
                   width={40}
                   height={40}
+                  alt="description of image"
                 />
               </a>
             </div>
