@@ -1,0 +1,5 @@
+npm i sass
+npm install js-cookie
+
+npm install jquery
+npm uninstall jquery

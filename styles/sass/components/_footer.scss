@@ -1,0 +1,77 @@
+.footer {
+  &-header {
+    background-color: rgb(34, 34, 34);
+    height: 380px;
+    padding: 40px 15%;
+    &__col {
+      &-img {
+        margin-top: 30px;
+        width: 60%;
+      }
+      &-title {
+        padding-top: 30px;
+        font-weight: bold;
+        color: #fff;
+        font-size: 30px;
+      }
+      &-input {
+        height: 28px;
+        font-size: 14px;
+        padding-left: 10px;
+        width: 60%;
+      }
+      &-button {
+        display: block;
+        margin-top: 10px;
+        background-color: rgb(170, 30, 35);
+        border-radius: 5px;
+        &-span {
+          padding: 10px;
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+      &-text {
+        padding-top: 10px;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+        &-a {
+          padding-left: 10px;
+        }
+        &:hover {
+          cursor: pointer;
+          color: rgb(170, 30, 35);
+          padding-left: 3px;
+        }
+      }
+      &-social {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-img-i {
+          width: 40px;
+          &:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          }
+        }
+      }
+    }
+  }
+  &-footer {
+    background-color: rgb(18, 19, 19);
+    height: 60px;
+    &__text {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      line-height: 60px;
+    }
+  }
+
+  &-lep-home {
+    height: 5000px;
+  }
+}

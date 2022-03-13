@@ -1,0 +1,68 @@
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-SSS: 200px; 
+$mobile-SS: 280px; 
+$mobile-S: 320px; 
+$mobile-M: 375px; 
+$mobile-L: 425px; 
+$tablet: 768px; 
+$laptop: 1024px; 
+$laptop-L: 1440px; 
+
+
+
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };        // 600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };       // 900px
+    }
+    @if $breakpoint == mobile-SSS{
+        @media only screen and (max-width: 200px) { @content };       // 900px
+    }
+    @if $breakpoint == mobile-SS{
+        @media only screen and (max-width: 280px) { @content };       // 900px
+    }
+    @if $breakpoint == mobile-S{
+        @media only screen and (max-width: 320px) { @content };       // 900px
+    }
+    @if $breakpoint == mobile-M{
+        @media only screen and (max-width: 375px) { @content };       // 900px
+    }
+    @if $breakpoint == mobile-L{
+        @media only screen and (max-width: 425px) { @content };       // 900px
+    }
+    @if $breakpoint == mobile-XL{
+        @media only screen and (max-width: 768px) { @content };       // 900px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 900px) { @content };       // 900px
+    }
+    @if $breakpoint == laptop {
+        @media only screen and (max-width: 1024px) { @content };          // 1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (max-width: 1440px) { @content };       // 1800px
+    }
+    @if $breakpoint == big-desktop-X {
+        @media only screen and (max-width: 1630px) { @content };       // 1800px
+    }
+}
