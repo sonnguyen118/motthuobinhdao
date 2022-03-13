@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -6,10 +7,12 @@ const Footer = () => {
       <div className="footer-header">
         <div className="row">
           <div className="footer-header__col col">
-            <img
-              className="footer-header__col-img"
+            <Image
+              className="footer-header__col-Image"
               src={`/media/logo-red.png`}
-            ></img>
+              width={151}
+              height={151}
+            ></Image>
             <h1 className="footer-header__col-title">SUBSCRIBE</h1>
             <input
               className="footer-header__col-input"
@@ -75,52 +78,62 @@ const Footer = () => {
             </div>
             <div className="footer-header__col-social">
               <a
-                className="footer-header__col-social-img"
+                className="footer-header__col-social-Image"
                 href="https://www.facebook.com/CritiStudio"
               >
-                <img
-                  className="footer-header__col-social-img-i"
+                <Image
+                  className="footer-header__col-social-Image-i"
                   src={`/media/facebook.png`}
+                  width={40}
+                  height={40}
                 />
               </a>
 
               <a
-                className="footer-header__col-social-img"
+                className="footer-header__col-social-Image"
                 href="https://www.instagram.com/Critistudio/"
               >
-                <img
-                  className="footer-header__col-social-img-i"
+                <Image
+                  className="footer-header__col-social-Image-i"
                   src={`/media/instagram.png`}
+                  width={40}
+                  height={40}
                 />
               </a>
 
               <a
-                className="footer-header__col-social-img"
+                className="footer-header__col-social-Image"
                 href="https://www.linkedin.com/in/studio-criti-87049b232/"
               >
-                <img
-                  className="footer-header__col-social-img-i"
+                <Image
+                  className="footer-header__col-social-Image-i"
                   src={`/media/linkedin.png`}
+                  width={40}
+                  height={40}
                 />
               </a>
 
               <a
-                className="footer-header__col-social-img"
+                className="footer-header__col-social-Image"
                 href="https://www.tiktok.com/@critistudio"
               >
-                <img
-                  className="footer-header__col-social-img-i"
+                <Image
+                  className="footer-header__col-social-Image-i"
                   src={`/media/tik-tok.png`}
+                  width={40}
+                  height={40}
                 />
               </a>
 
               <a
-                className="footer-header__col-social-img"
+                className="footer-header__col-social-Image"
                 href="https://twitter.com/CritiStudio"
               >
-                <img
-                  className="footer-header__col-social-img-i"
+                <Image
+                  className="footer-header__col-social-Image-i"
                   src={`/media/twitter.png`}
+                  width={40}
+                  height={40}
                 />
               </a>
             </div>

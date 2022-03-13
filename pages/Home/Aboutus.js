@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Aboutus = () => {
   return (
@@ -15,7 +16,7 @@ const Aboutus = () => {
         </div>
       </div>
       <div className="aboutus-image">
-        <img src={`/media/abouts.png`} />
+        <Image src={`/media/abouts.png`} width={40} height={40} />
       </div>
     </div>
   );

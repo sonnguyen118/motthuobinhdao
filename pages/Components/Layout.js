@@ -82,74 +82,94 @@ export default function Layout({ title, children, description }) {
       <body className="">
         <navbar>
           <header className={navbar ? "" : "scroll"}>
-            <div class="sticky-bg"></div>
-            <a class="brand" href="http://pebbledesign.com/">
+            <div className="sticky-bg"></div>
+            <a className="brand" href="http://pebbledesign.com/">
               <img
                 src={`/media/baner-logo-red-text-white.png`}
-                class="logo"
-                width={600}
-                height={80}
+                className="logo"
+                width={481}
+                height={82}
               />
-              <Image
+              <img
                 src={`/media/logo-red.png`}
-                class="logo-thumb"
-                width={100}
-                height={100}
+                className="logo-thumb"
+                width={51}
+                height={51}
               />
             </a>
             <nav>
               <ul className={navbarHover ? "main-nav hover" : "main-nav"}>
                 <li
-                  class="first-level left"
+                  className="first-level left"
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
                   <span className={navbar ? "" : "color-black"}>Trang Chủ</span>
                 </li>
                 <li
-                  class="first-level left"
+                  className="first-level left"
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
                   <span className={navbar ? "" : "color-black"}>
                     Nghiên cứu lịch sử
                   </span>
-                  <ul class="submenu">
-                    <li class="submenu-col">
+                  <ul className="submenu">
+                    <li className="submenu-col">
                       <a href="#">
-                        <img src={`/media/platform_1.jpg`} class="current" />
-                        <div class="submenu-title">
-                          <p class="submenu-title-text">
+                        <Image
+                          src={`/media/platform_1.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                        />
+                        <div className="submenu-title">
+                          <p className="submenu-title-text">
                             Kinh tế - Chính Trị - Giai Cấp
                           </p>
                         </div>
                       </a>
                     </li>
-                    <li class="submenu-col">
+                    <li className="submenu-col">
                       <a href="#">
-                        <img src={`/media/platform_2.jpg`} class="current" />
-                        <div class="submenu-title">
-                          <p class="submenu-title-text">
+                        <Image
+                          src={`/media/platform_2.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                        />
+                        <div className="submenu-title">
+                          <p className="submenu-title-text">
                             Nhân Vật - Các Cuộc Chiến
                           </p>
                         </div>
                       </a>
                     </li>
-                    <li class="submenu-col">
+                    <li className="submenu-col">
                       <a href="#">
-                        <img src={`/media/platform_3.jpg`} class="current" />
-                        <div class="submenu-title">
-                          <p class="submenu-title-text">
+                        <Image
+                          src={`/media/platform_3.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                        />
+                        <div className="submenu-title">
+                          <p className="submenu-title-text">
                             Trang Phục - Văn Hóa - Đồ Vật
                           </p>
                         </div>
                       </a>
                     </li>
-                    <li class="submenu-col">
+                    <li className="submenu-col">
                       <a href="#">
-                        <img src={`/media/platform_4.jpg`} class="current" />
-                        <div class="submenu-title">
-                          <p class="submenu-title-text">
+                        <Image
+                          src={`/media/platform_4.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                        />
+                        <div className="submenu-title">
+                          <p className="submenu-title-text">
                             Phong Tục - Giáo Tiếp Xã Hội
                           </p>
                         </div>
@@ -158,41 +178,58 @@ export default function Layout({ title, children, description }) {
                   </ul>
                 </li>
                 <li
-                  class="first-level right"
+                  className="first-level right"
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
                   <span className={navbar ? "" : "color-black"}>Dự Án</span>
-                  <ul class="submenu">
-                    <li class="submenu-col">
+                  <ul className="submenu">
+                    <li className="submenu-col">
                       <a href="#">
-                        <img src={`/media/project_1.jpg`} class="current" />
-                        <div class="submenu-title">Trung Hưng Liệt Truyện</div>
+                        <Image
+                          src={`/media/project_1.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                        />
+                        <div className="submenu-title">
+                          Trung Hưng Liệt Truyện
+                        </div>
                       </a>
                     </li>
-                    <li class="submenu-col">
+                    <li className="submenu-col">
                       <a href="#">
-                        <img src={`/media/project_2.jpg`} class="current" />
-                        <div class="submenu-title">Truyền Kỳ Mạn Lục</div>
+                        <Image
+                          src={`/media/project_2.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                        />
+                        <div className="submenu-title">Truyền Kỳ Mạn Lục</div>
                       </a>
                     </li>
-                    <li class="submenu-col">
+                    <li className="submenu-col">
                       <a href="#">
-                        <img src={`/media/project_3.jpg`} class="current" />
-                        <div class="submenu-title">Game - Giải Trí</div>
+                        <Image
+                          src={`/media/project_3.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                        />
+                        <div className="submenu-title">Game - Giải Trí</div>
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li
-                  class="first-level right"
+                  className="first-level right"
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
                   <span className={navbar ? "" : "color-black"}>Liên Hệ</span>
                 </li>
                 <li
-                  class="first-level right"
+                  className="first-level right"
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
@@ -224,8 +261,8 @@ export default function Layout({ title, children, description }) {
               Đăng Nhập
             </p>
           </div>
-          <div class="layout-my-notifi wrapper">
-            <div class="layout-my-notifi-bell bell" id="bell-1">
+          <div className="layout-my-notifi wrapper">
+            <div className="layout-my-notifi-bell bell" id="bell-1">
               <i
                 className={
                   navbar
