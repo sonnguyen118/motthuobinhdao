@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import Aboutus from "./Aboutus";
-
+import ListProject from "./ListProject";
+import Slideshow from "./Slideshow";
 const Homee = () => {
   const [Volume, setVolume] = useState(true);
   console.log(Volume);
@@ -42,6 +43,10 @@ const Homee = () => {
       </div>
 
       <Aboutus />
+      <div className="home-listproduct">
+        <ListProject />
+      </div>
+      <Slideshow />
     </div>
   );
 };

@@ -3,3 +3,5 @@ npm install js-cookie
 
 npm install jquery
 npm uninstall jquery
+
+yarn add 3d-react-carousal
