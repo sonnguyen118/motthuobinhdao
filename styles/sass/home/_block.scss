@@ -1,0 +1,97 @@
+.home {
+  &__block {
+    &-2 {
+      margin-top: 90px;
+      padding: 0 15%;
+      background-color: black;
+      height: 600px;
+      display: flex;
+      justify-content: space-between;
+
+      &-title {
+        padding: 100px;
+        width: 50%;
+        &-h1 {
+          font-size: 35px;
+          font-weight: bold;
+          color: #fff;
+          margin-bottom: 20px;
+        }
+        &-span {
+          font-size: 16px;
+          font-weight: 300;
+          color: #fff;
+          margin-bottom: 20px;
+          text-align: justify;
+        }
+        &-button {
+          margin-top: 50px;
+          height: 40px;
+          background-color: transparent;
+          border-radius: 16px;
+          &-text {
+            font-size: 14px;
+            padding: 0 20px;
+            color: #fff;
+            text-decoration: none;
+          }
+          &:hover {
+            background-color: rgb(170, 30, 35);
+          }
+          &:hover &-text {
+            color: #fff;
+          }
+        }
+      }
+      &-img {
+        height: 100%;
+      }
+    }
+    &-3 {
+      padding: 0 15%;
+      //   background-color: black;
+      height: 600px;
+      display: flex;
+      justify-content: space-between;
+
+      &-title {
+        padding: 100px;
+        width: 50%;
+        &-h1 {
+          font-size: 35px;
+          font-weight: bold;
+          color: black;
+          margin-bottom: 20px;
+        }
+        &-span {
+          font-size: 16px;
+          font-weight: 300;
+          color: black;
+          margin-bottom: 20px;
+          text-align: justify;
+        }
+        &-button {
+          margin-top: 50px;
+          height: 40px;
+          background-color: transparent;
+          border-radius: 16px;
+          &-text {
+            font-size: 14px;
+            padding: 0 20px;
+            color: black;
+            text-decoration: none;
+          }
+          &:hover {
+            background-color: rgb(170, 30, 35);
+          }
+          &:hover &-text {
+            color: black;
+          }
+        }
+      }
+      &-img {
+        height: 100%;
+      }
+    }
+  }
+}

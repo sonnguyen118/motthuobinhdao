@@ -2,6 +2,9 @@ import React, { useContext, useState, useEffect } from "react";
 import Aboutus from "./Aboutus";
 import ListProject from "./ListProject";
 import Slideshow from "./Slideshow";
+import Block from "./Block";
+import Analysis from "./Analysis";
+
 const Homee = () => {
   const [Volume, setVolume] = useState(true);
   console.log(Volume);
@@ -41,12 +44,25 @@ const Homee = () => {
           <span className="slider round"></span>
         </label>
       </div>
+      <div className="home-aboutus">
+        <h1 className="home-aboutus">VỀ CHÚNG TÔI</h1>
+        <Aboutus />
+      </div>
 
-      <Aboutus />
       <div className="home-listproduct">
         <ListProject />
       </div>
-      <Slideshow />
+
+      <div className="home-slideshow">
+        <h1 className="home-slideshow-title">Concept Art Gallery</h1>
+        <Slideshow />
+      </div>
+      <div>
+        <Analysis />
+      </div>
+      <div className="home-block">
+        <Block />
+      </div>
     </div>
   );
 };

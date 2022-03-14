@@ -6,7 +6,7 @@ const Aboutus = () => {
   return (
     <div className="aboutus">
       <div className="aboutus-text">
-        <p className="aboutus-text-title">VỀ CHÚNG TÔI</p>
+        {/* <p className="aboutus-text-title">VỀ CHÚNG TÔI</p> */}
         <div className="aboutus-text-body">
           <div></div>
           <p className="aboutus-text-body-text">

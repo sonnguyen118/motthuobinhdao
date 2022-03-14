@@ -1,4 +1,6 @@
 @import "./listproduct";
+@import "./block";
+@import "./analysis";
 
 .home {
   &__video {
@@ -9,13 +11,85 @@
       width: 100%;
     }
   }
+  &-aboutus {
+    text-align: center;
+    margin-top: 70px;
+
+    font-size: 40px;
+  }
   &-listproduct {
     padding: 0 20%;
-    margin-top: 50px;
     &-div-title {
       text-align: center;
       margin-bottom: 50px;
     }
+  }
+  &-slideshow {
+    margin-top: 90px;
+    &-title {
+      text-align: center;
+      font-size: 60px;
+    }
+  }
+  &-analysis {
+    margin: 90px 0;
+    &-title {
+      text-align: center;
+      font-size: 60px;
+      margin-bottom: 90px;
+    }
+    &-body {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 15%;
+      &-slideshow {
+      }
+      &-list {
+        margin-left: 30px;
+        &-title {
+          background-color: #ccc;
+          width: 100%;
+          height: 20px;
+          &-span {
+            font-size: 18px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            width: 40%;
+            margin: 0 auto;
+            height: 40px;
+            line-height: 40px;
+            top: -10px;
+            border-radius: 5px;
+          }
+        }
+        &-body {
+          margin-top: 40px;
+          &-item {
+            display: flex;
+            justify-content: space-between;
+            &-img {
+            }
+            &-content {
+              margin-left: 20px;
+              &_1 {
+                font-size: 18px;
+                font-weight: bold;
+              }
+              &_2 {
+                margin-top: 10px;
+                font-size: 14px;
+                color: #333;
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-block {
   }
 }
 
@@ -26,6 +100,8 @@
   background-image: url("/media/Untitled-10.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
+  height: 520px;
+  margin-bottom: 70px;
 
   &-text {
     width: 50%;
@@ -48,10 +124,6 @@
   &-image {
     width: 50%;
   }
-}
-
-.Slideshow {
-  height: 999px;
 }
 
 /* The switch - the box around the slider */
@@ -132,15 +204,13 @@ input:checked + .slider:before {
 
 #slideshow {
   margin: 0 auto;
-  padding-top: 100px;
-  height: 560px;
-  width: 860px;
+  padding-top: 80px;
+  right: 20%;
   background-color: transparent;
   box-sizing: border-box;
 }
 
 .slideshow-title {
-  font-family: "Allerta Stencil";
   font-size: 62px;
   margin: 0 auto;
   text-align: center;
@@ -262,5 +332,89 @@ input:checked + .slider:before {
   }
   to {
     transform: rotateY(360deg);
+  }
+}
+
+// Slideshow
+#slideshow {
+  text-align: center;
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 7200px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 800px;
+  width: 1200px;
+}
+
+.slide:nth-child(1) {
+  background-image: url("/media/slideshow_1.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(2) {
+  background-image: url("/media/slideshow_2.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(3) {
+  background-image: url("/media/slideshow_3.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(4) {
+  background-image: url("/media/slideshow_4.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+.slide:nth-child(5) {
+  background-image: url("/media/slideshow_5.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+.slide:nth-child(6) {
+  background-image: url("/media/slideshow_6.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -1200px;
+  }
+  50% {
+    margin-left: -2400px;
+  }
+  60% {
+    margin-left: -3600px;
+  }
+  70% {
+    margin-left: -4800px;
+  }
+  80% {
+    margin-left: -6000px;
+  }
+  90% {
+    margin-left: -6000px;
   }
 }
