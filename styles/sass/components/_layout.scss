@@ -162,7 +162,8 @@ nav li.submenu-col {
   width: calc(25% - 20px);
   max-width: 242px;
   position: relative;
-  margin: 0 10px;
+  margin: 0px 10px;
+  margin-bottom: 15px;
 }
 nav li.submenu-col a {
   text-decoration: none;
@@ -176,23 +177,48 @@ nav ul.submenu img {
   filter: grayscale(100%);
 }
 nav li .submenu-title {
-  background-color: #ccc;
+  background-color: transparent;
   font-size: 16px;
   position: absolute;
-  top: 35%;
+  top: 40%;
   right: 0;
   width: 100%;
+  z-index: 9;
+  height: 30px;
 }
 .submenu-title-text {
-  color: black;
+  color: transparent;
   font-size: 16px;
+  line-height: 30px;
   text-align: center;
 }
-nav li .submenu-title:hover {
+.submenu-col:hover .submenu-title {
   background-color: black;
+  animation-name: anim-lineUp;
+  animation-duration: 0.5s;
 }
-nav li .submenu-title:hover .submenu-title-text {
+.submenu-col:hover .submenu-title-text {
   color: white;
+  animation-name: anim-lineUp;
+  animation-duration: 0.5s;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 /* Hover Styles */
@@ -506,6 +532,7 @@ header.scroll nav ul li.first-level.right span {
   align-items: center;
   justify-content: space-between;
   top: 10px;
+  right: 200px;
   &-login {
     padding: 10px;
     display: flex;
@@ -535,6 +562,9 @@ header.scroll nav ul li.first-level.right span {
       &-icon {
         font-size: 24px;
       }
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 }

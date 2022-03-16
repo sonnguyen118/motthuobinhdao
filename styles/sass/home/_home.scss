@@ -97,9 +97,9 @@
   display: flex;
   justify-content: space-between;
   margin: 0 10%;
-  background-image: url("/media/Untitled-10.png");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
+  // background-image: url("/media/Untitled-10.png");
+  // background-position: center; /* Center the image */
+  // background-repeat: no-repeat;
   height: 520px;
   margin-bottom: 70px;
 
@@ -129,9 +129,9 @@
 /* The switch - the box around the slider */
 .block-switch {
   position: fixed;
-  right: 20px;
+  left: 200px;
   top: 20px;
-  z-index: 999999;
+  z-index: 9999;
 }
 .block-switch-text {
   color: #ccc;

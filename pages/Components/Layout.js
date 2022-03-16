@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import NextLink from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -72,6 +73,13 @@ export default function Layout({ title, children, description }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         ></link>
         <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+          integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg=="
+          crossOrigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -111,7 +119,11 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <span className={navbar ? "" : "color-black"}>Trang Chủ</span>
+                  <Link href={`/`}>
+                    <span className={navbar ? "" : "color-black"}>
+                      Trang Chủ
+                    </span>
+                  </Link>
                 </li>
                 <li
                   className="first-level left"
@@ -131,9 +143,15 @@ export default function Layout({ title, children, description }) {
                           height={162}
                           alt="description of image"
                         />
-                        <div className="submenu-title">
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
                           <p className="submenu-title-text">
-                            Kinh tế - Chính Trị - Giai Cấp
+                            Kinh Tế - Chính Trị
                           </p>
                         </div>
                       </a>
@@ -147,10 +165,14 @@ export default function Layout({ title, children, description }) {
                           height={162}
                           alt="description of image"
                         />
-                        <div className="submenu-title">
-                          <p className="submenu-title-text">
-                            Nhân Vật - Các Cuộc Chiến
-                          </p>
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
+                          <p className="submenu-title-text">Vật Dụng - Đồ Cụ</p>
                         </div>
                       </a>
                     </li>
@@ -163,9 +185,35 @@ export default function Layout({ title, children, description }) {
                           height={162}
                           alt="description of image"
                         />
-                        <div className="submenu-title">
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
+                          <p className="submenu-title-text">Trang Phục</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li className="submenu-col">
+                      <a href="#">
+                        <Image
+                          src={`/media/platform_4.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                          alt="description of image"
+                        />
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
                           <p className="submenu-title-text">
-                            Trang Phục - Văn Hóa - Đồ Vật
+                            Phong Tục - Lễ Nghi
                           </p>
                         </div>
                       </a>
@@ -179,9 +227,35 @@ export default function Layout({ title, children, description }) {
                           height={162}
                           alt="description of image"
                         />
-                        <div className="submenu-title">
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
+                          <p className="submenu-title-text">Kiến Trúc</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li className="submenu-col">
+                      <a href="#">
+                        <Image
+                          src={`/media/platform_4.jpg`}
+                          className="current"
+                          width={242}
+                          height={162}
+                          alt="description of image"
+                        />
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
                           <p className="submenu-title-text">
-                            Phong Tục - Giáo Tiếp Xã Hội
+                            Nhân Vật - Giai Thoại
                           </p>
                         </div>
                       </a>
@@ -204,8 +278,16 @@ export default function Layout({ title, children, description }) {
                           height={162}
                           alt="description of image"
                         />
-                        <div className="submenu-title">
-                          Trung Hưng Liệt Truyện
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
+                          <p className="submenu-title-text">
+                            Trung Hưng Liệt Truyện
+                          </p>
                         </div>
                       </a>
                     </li>
@@ -218,7 +300,17 @@ export default function Layout({ title, children, description }) {
                           height={162}
                           alt="description of image"
                         />
-                        <div className="submenu-title">Truyền Kỳ Mạn Lục</div>
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
+                          <p className="submenu-title-text">
+                            Truyền Kỳ Mạn Lục
+                          </p>
+                        </div>
                       </a>
                     </li>
                     <li className="submenu-col">
@@ -230,7 +322,15 @@ export default function Layout({ title, children, description }) {
                           height={162}
                           alt="description of image"
                         />
-                        <div className="submenu-title">Game - Giải Trí</div>
+                        <div
+                          className={
+                            navbar
+                              ? "submenu-title"
+                              : "submenu-title magrin-right-20"
+                          }
+                        >
+                          <p className="submenu-title-text">Game Mobile</p>
+                        </div>
                       </a>
                     </li>
                   </ul>
@@ -240,16 +340,20 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <span className={navbar ? "" : "color-black"}>Liên Hệ</span>
+                  <Link href={`/contact`}>
+                    <span className={navbar ? "" : "color-black"}>Liên Hệ</span>
+                  </Link>
                 </li>
                 <li
                   className="first-level right"
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <span className={navbar ? "" : "color-black"}>
-                    Tuyển Dụng
-                  </span>
+                  <Link href={`/recruit`}>
+                    <span className={navbar ? "" : "color-black"}>
+                      Tuyển Dụng
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -257,49 +361,53 @@ export default function Layout({ title, children, description }) {
         </navbar>
 
         <div className="layout-my">
-          <div className="layout-my-login">
-            <i
-              className={
-                navbar
-                  ? "layout-my-login-icon fa fa-user-circle"
-                  : "layout-my-login-icon fa fa-user-circle color-black"
-              }
-            />
-            <p
-              className={
-                navbar
-                  ? "layout-my-login-text"
-                  : "layout-my-login-text color-black"
-              }
-            >
-              Đăng Nhập
-            </p>
-          </div>
-          <div className="layout-my-notifi wrapper">
-            <div className="layout-my-notifi-bell bell" id="bell-1">
+          <Link href={`/login`}>
+            <div className="layout-my-login">
               <i
                 className={
                   navbar
-                    ? "layout-my-notifi-bell-icon anchor material-icons layer-1 fa fa-bell"
-                    : "layout-my-notifi-bell-icon anchor material-icons layer-1 fa fa-bell color-black"
+                    ? "layout-my-login-icon fa fa-user-circle"
+                    : "layout-my-login-icon fa fa-user-circle color-black"
                 }
               />
-              <i
+              <p
                 className={
                   navbar
-                    ? "layout-my-notifi-bell-icon anchor material-icons layer-2 fa fa-bell"
-                    : "layout-my-notifi-bell-icon anchor material-icons layer-2 fa fa-bell color-black"
+                    ? "layout-my-login-text"
+                    : "layout-my-login-text color-black"
                 }
-              />
-              <i
-                className={
-                  navbar
-                    ? "layout-my-notifi-bell-icon anchor material-icons layer-3 fa fa-bell"
-                    : "layout-my-notifi-bell-icon anchor material-icons layer-3 fa fa-bell color-black"
-                }
-              />
+              >
+                Đăng Nhập
+              </p>
             </div>
-          </div>
+          </Link>
+          <Link href={`/login`}>
+            <div className="layout-my-notifi wrapper">
+              <div className="layout-my-notifi-bell bell" id="bell-1">
+                <i
+                  className={
+                    navbar
+                      ? "layout-my-notifi-bell-icon anchor material-icons layer-1 fa fa-bell"
+                      : "layout-my-notifi-bell-icon anchor material-icons layer-1 fa fa-bell color-black"
+                  }
+                />
+                <i
+                  className={
+                    navbar
+                      ? "layout-my-notifi-bell-icon anchor material-icons layer-2 fa fa-bell"
+                      : "layout-my-notifi-bell-icon anchor material-icons layer-2 fa fa-bell color-black"
+                  }
+                />
+                <i
+                  className={
+                    navbar
+                      ? "layout-my-notifi-bell-icon anchor material-icons layer-3 fa fa-bell"
+                      : "layout-my-notifi-bell-icon anchor material-icons layer-3 fa fa-bell color-black"
+                  }
+                />
+              </div>
+            </div>
+          </Link>
         </div>
         <div className="">{children}</div>
 
