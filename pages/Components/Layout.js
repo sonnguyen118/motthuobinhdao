@@ -340,7 +340,7 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <Link href={`/contact`}>
+                  <Link href={`/Contact`}>
                     <span className={navbar ? "" : "color-black"}>Liên Hệ</span>
                   </Link>
                 </li>
@@ -349,7 +349,7 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <Link href={`/recruit`}>
+                  <Link href={`/Recruit`}>
                     <span className={navbar ? "" : "color-black"}>
                       Tuyển Dụng
                     </span>
