@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -25,39 +26,39 @@ const Footer = () => {
           </div>
           <div className="footer-header__col col">
             <h1 className="footer-header__col-title">SẢN PHẨM</h1>
-            <a href="/shop" className="footer-header__col-text">
+            <Link href="/shop" className="footer-header__col-text">
               - Cửa hàng
-            </a>
-            <a href="/game" className="footer-header__col-text">
+            </Link>
+            <Link href="/game" className="footer-header__col-text">
               - Game
-            </a>
-            <a href="/films" className="footer-header__col-text">
+            </Link>
+            <Link href="/films" className="footer-header__col-text">
               - Phim
-            </a>
-            <a href="/technology" className="footer-header__col-text">
+            </Link>
+            <Link href="/technology" className="footer-header__col-text">
               - Công nghệ
-            </a>
-            <a href="/community" className="footer-header__col-text">
+            </Link>
+            <Link href="/community" className="footer-header__col-text">
               - Cộng Đồng
-            </a>
-            <a href="/help" className="footer-header__col-text">
+            </Link>
+            <Link href="/help" className="footer-header__col-text">
               - Trợ giúp
-            </a>
-            <a href="/contact" className="footer-header__col-text">
+            </Link>
+            <Link href="/contact" className="footer-header__col-text">
               - Liên Hệ
-            </a>
+            </Link>
           </div>
           <div className="footer-header__col col">
             <h1 className="footer-header__col-title">DỰ ÁN</h1>
-            <a href="/films" className="footer-header__col-text">
+            <Link href="/films" className="footer-header__col-text">
               - Phim 3D cổ trang
-            </a>
-            <a href="/game" className="footer-header__col-text">
+            </Link>
+            <Link href="/game" className="footer-header__col-text">
               - Game
-            </a>
-            <a href="/films" className="footer-header__col-text">
+            </Link>
+            <Link href="/films" className="footer-header__col-text">
               - Cổ phục
-            </a>
+            </Link>
           </div>
           <div className="footer-header__col col">
             <h1 className="footer-header__col-title">TRỤ SỞ CHÍNH</h1>
@@ -78,7 +79,7 @@ const Footer = () => {
               </span>
             </div>
             <div className="footer-header__col-social">
-              <a
+              <Link
                 className="footer-header__col-social-Image"
                 href="https://www.facebook.com/CritiStudio"
               >
@@ -89,9 +90,9 @@ const Footer = () => {
                   height={40}
                   alt="description of image"
                 />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="footer-header__col-social-Image"
                 href="https://www.instagram.com/Critistudio/"
               >
@@ -102,9 +103,9 @@ const Footer = () => {
                   height={40}
                   alt="description of image"
                 />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="footer-header__col-social-Image"
                 href="https://www.linkedin.com/in/studio-criti-87049b232/"
               >
@@ -115,9 +116,9 @@ const Footer = () => {
                   height={40}
                   alt="description of image"
                 />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="footer-header__col-social-Image"
                 href="https://www.tiktok.com/@critistudio"
               >
@@ -128,9 +129,9 @@ const Footer = () => {
                   height={40}
                   alt="description of image"
                 />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="footer-header__col-social-Image"
                 href="https://twitter.com/CritiStudio"
               >
@@ -141,7 +142,7 @@ const Footer = () => {
                   height={40}
                   alt="description of image"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

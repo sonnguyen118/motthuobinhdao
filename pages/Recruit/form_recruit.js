@@ -34,6 +34,7 @@ const FormRecruit = () => {
             <input
               type="email"
               placeholder="My e-mail is"
+              className="FormRecruit-input"
               name="email"
               id="email_input"
               required
@@ -44,6 +45,7 @@ const FormRecruit = () => {
             <input
               type="text"
               placeholder="My number is"
+              className="FormRecruit-input"
               name="telephone"
               id="telephone_input"
               required
