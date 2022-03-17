@@ -1,16 +1,9 @@
 //Color Variables
-$sidebar-background-color: #333;
+$sidebar-background-color: #555;
 $active-sidebar-link-color: #22252e;
 $hover-sidebar-link-color: $active-sidebar-link-color;
 $active-link-color: #98d7ec;
 $tooltip-background-color: $sidebar-background-color;
-
-// .left {
-//   text-align: left;
-// }
-// .right {
-//   text-align: right;
-// }
 
 .analysis-menu-sidebar-navigation {
   display: inline-block;
@@ -18,10 +11,9 @@ $tooltip-background-color: $sidebar-background-color;
   min-height: 120vh;
   z-index: 100000;
   top: 0;
-  width: 80px;
+  width: 60px;
   background-color: $sidebar-background-color;
   margin: 0;
-  float: right;
 
   ul {
     text-align: center;
@@ -51,6 +43,7 @@ $tooltip-background-color: $sidebar-background-color;
         visibility: hidden;
         font-size: 13px;
         letter-spacing: 0.5px;
+        width: 100px;
 
         &:before {
           content: "";

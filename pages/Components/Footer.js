@@ -104,6 +104,7 @@ const Footer = () => {
               <Link
                 className="footer-header__col-social-Image"
                 href="https://www.instagram.com/Critistudio/"
+                passHref
               >
                 <Image
                   className="footer-header__col-social-Image-i"

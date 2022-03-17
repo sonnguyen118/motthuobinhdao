@@ -5,3 +5,6 @@ npm install jquery
 npm uninstall jquery
 
 yarn add 3d-react-carousal
+
+yarn add semantic-ui-react semantic-ui-css
+npm uninstall semantic-ui-react semantic-ui-css

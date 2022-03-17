@@ -33,6 +33,7 @@ const DangNgoai = () => {
                     src={`/media/dragon.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <h3 className="analysis-component_index-menu-title">
@@ -74,6 +75,7 @@ const DangNgoai = () => {
                     src={`/media/dragon.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <h3 className="analysis-component_index-menu-title">
@@ -87,6 +89,7 @@ const DangNgoai = () => {
                     src={`/media/dragon.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <h3 className="analysis-component_index-menu-title">
@@ -126,6 +129,7 @@ const DangNgoai = () => {
                     src={`/media/new_dangngoai_1.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <div className="analysis-component_list-block-main-content-title">
@@ -145,6 +149,7 @@ const DangNgoai = () => {
                     src={`/media/new_dangngoai_1.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <div className="analysis-component_list-block-main-content-title">
@@ -164,6 +169,7 @@ const DangNgoai = () => {
                     src={`/media/new_dangngoai_1.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <div className="analysis-component_list-block-main-content-title">
@@ -183,6 +189,7 @@ const DangNgoai = () => {
                     src={`/media/new_dangngoai_1.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <div className="analysis-component_list-block-main-content-title">
@@ -202,6 +209,7 @@ const DangNgoai = () => {
                     src={`/media/new_dangngoai_1.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <div className="analysis-component_list-block-main-content-title">
@@ -221,6 +229,7 @@ const DangNgoai = () => {
                     src={`/media/new_dangngoai_1.png`}
                     layout="fill"
                     objectFit="contain"
+                    alt="description of image"
                   />
                 </div>
                 <div className="analysis-component_list-block-main-content-title">

@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import Head from "next/head";
+
 import Link from "next/link";
 import NextLink from "next/link";
 import Image from "next/image";
