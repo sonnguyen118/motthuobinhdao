@@ -26,37 +26,45 @@ const Footer = () => {
           </div>
           <div className="footer-header__col col">
             <h1 className="footer-header__col-title">SẢN PHẨM</h1>
-            <Link href="/shop" className="footer-header__col-text">
+            <Link href="/shop" className="footer-header__col-text" passHref>
               - Cửa hàng
             </Link>
-            <Link href="/game" className="footer-header__col-text">
+            <Link href="/game" className="footer-header__col-text" passHref>
               - Game
             </Link>
-            <Link href="/films" className="footer-header__col-text">
+            <Link href="/films" className="footer-header__col-text" passHref>
               - Phim
             </Link>
-            <Link href="/technology" className="footer-header__col-text">
+            <Link
+              href="/technology"
+              className="footer-header__col-text"
+              passHref
+            >
               - Công nghệ
             </Link>
-            <Link href="/community" className="footer-header__col-text">
+            <Link
+              href="/community"
+              className="footer-header__col-text"
+              passHref
+            >
               - Cộng Đồng
             </Link>
-            <Link href="/help" className="footer-header__col-text">
+            <Link href="/help" className="footer-header__col-text" passHref>
               - Trợ giúp
             </Link>
-            <Link href="/contact" className="footer-header__col-text">
+            <Link href="/contact" className="footer-header__col-text" passHref>
               - Liên Hệ
             </Link>
           </div>
           <div className="footer-header__col col">
             <h1 className="footer-header__col-title">DỰ ÁN</h1>
-            <Link href="/films" className="footer-header__col-text">
+            <Link href="/films" className="footer-header__col-text" passHref>
               - Phim 3D cổ trang
             </Link>
-            <Link href="/game" className="footer-header__col-text">
+            <Link href="/game" className="footer-header__col-text" passHref>
               - Game
             </Link>
-            <Link href="/films" className="footer-header__col-text">
+            <Link href="/films" className="footer-header__col-text" passHref>
               - Cổ phục
             </Link>
           </div>
@@ -82,6 +90,7 @@ const Footer = () => {
               <Link
                 className="footer-header__col-social-Image"
                 href="https://www.facebook.com/CritiStudio"
+                passHref
               >
                 <Image
                   className="footer-header__col-social-Image-i"
@@ -108,6 +117,7 @@ const Footer = () => {
               <Link
                 className="footer-header__col-social-Image"
                 href="https://www.linkedin.com/in/studio-criti-87049b232/"
+                passHref
               >
                 <Image
                   className="footer-header__col-social-Image-i"
@@ -121,6 +131,7 @@ const Footer = () => {
               <Link
                 className="footer-header__col-social-Image"
                 href="https://www.tiktok.com/@critistudio"
+                passHref
               >
                 <Image
                   className="footer-header__col-social-Image-i"
@@ -134,6 +145,7 @@ const Footer = () => {
               <Link
                 className="footer-header__col-social-Image"
                 href="https://twitter.com/CritiStudio"
+                passHref
               >
                 <Image
                   className="footer-header__col-social-Image-i"

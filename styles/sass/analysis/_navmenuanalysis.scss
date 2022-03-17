@@ -1,0 +1,86 @@
+//Color Variables
+$sidebar-background-color: #333;
+$active-sidebar-link-color: #22252e;
+$hover-sidebar-link-color: $active-sidebar-link-color;
+$active-link-color: #98d7ec;
+$tooltip-background-color: $sidebar-background-color;
+
+// .left {
+//   text-align: left;
+// }
+// .right {
+//   text-align: right;
+// }
+
+.analysis-menu-sidebar-navigation {
+  display: inline-block;
+  position: fixed;
+  min-height: 120vh;
+  z-index: 100000;
+  top: 0;
+  width: 80px;
+  background-color: $sidebar-background-color;
+  margin: 0;
+  float: right;
+
+  ul {
+    text-align: center;
+    color: white;
+
+    li {
+      padding: 28px 0;
+      cursor: pointer;
+      transition: all ease-out 120ms;
+
+      i {
+        display: block;
+        font-size: 24px;
+
+        transition: all ease 450ms;
+      }
+
+      .analysis-menu-tooltip {
+        display: inline-block;
+        position: absolute;
+        background-color: $tooltip-background-color;
+        padding: 8px 15px;
+        border-radius: 3px;
+        margin-top: -26px;
+        left: 90px;
+        opacity: 0;
+        visibility: hidden;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -4px;
+          top: 10px;
+          transform: rotate(45deg);
+          width: 10px;
+          height: 10px;
+          background-color: inherit;
+        }
+      }
+
+      &:hover {
+        background-color: $hover-sidebar-link-color;
+
+        .analysis-menu-tooltip {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      &.analysis-menu-active {
+        background-color: $active-sidebar-link-color;
+
+        i {
+          color: $active-link-color;
+        }
+      }
+    }
+  }
+}

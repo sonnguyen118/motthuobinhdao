@@ -119,7 +119,7 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <Link href={`/`}>
+                  <Link href={`/`} passHref>
                     <span className={navbar ? "" : "color-black"}>
                       Trang Chủ
                     </span>
@@ -130,9 +130,11 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <span className={navbar ? "" : "color-black"}>
-                    Nghiên cứu lịch sử
-                  </span>
+                  <Link href={`/Analysis`} passHref>
+                    <span className={navbar ? "" : "color-black"}>
+                      Nghiên cứu lịch sử
+                    </span>
+                  </Link>
                   <ul className="submenu">
                     <li className="submenu-col">
                       <a href="#">
@@ -221,7 +223,7 @@ export default function Layout({ title, children, description }) {
                     <li className="submenu-col">
                       <a href="#">
                         <Image
-                          src={`/media/platform_4.jpg`}
+                          src={`/media/platform_5.jpg`}
                           className="current"
                           width={242}
                           height={162}
@@ -241,7 +243,7 @@ export default function Layout({ title, children, description }) {
                     <li className="submenu-col">
                       <a href="#">
                         <Image
-                          src={`/media/platform_4.jpg`}
+                          src={`/media/platform_6.jpg`}
                           className="current"
                           width={242}
                           height={162}
@@ -282,7 +284,7 @@ export default function Layout({ title, children, description }) {
                           className={
                             navbar
                               ? "submenu-title"
-                              : "submenu-title magrin-right-20"
+                              : "submenu-title magrin-lef-10"
                           }
                         >
                           <p className="submenu-title-text">
@@ -304,7 +306,7 @@ export default function Layout({ title, children, description }) {
                           className={
                             navbar
                               ? "submenu-title"
-                              : "submenu-title magrin-right-20"
+                              : "submenu-title magrin-lef-10"
                           }
                         >
                           <p className="submenu-title-text">
@@ -326,7 +328,7 @@ export default function Layout({ title, children, description }) {
                           className={
                             navbar
                               ? "submenu-title"
-                              : "submenu-title magrin-right-20"
+                              : "submenu-title magrin-lef-10"
                           }
                         >
                           <p className="submenu-title-text">Game Mobile</p>
@@ -340,7 +342,7 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <Link href={`/Contact`}>
+                  <Link href={`/Contact`} passHref>
                     <span className={navbar ? "" : "color-black"}>Liên Hệ</span>
                   </Link>
                 </li>
@@ -349,7 +351,7 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <Link href={`/Recruit`}>
+                  <Link href={`/Recruit`} passHref>
                     <span className={navbar ? "" : "color-black"}>
                       Tuyển Dụng
                     </span>
@@ -361,7 +363,7 @@ export default function Layout({ title, children, description }) {
         </navbar>
 
         <div className="layout-my">
-          <Link href={`/login`}>
+          <Link href={`/login`} passHref>
             <div className="layout-my-login">
               <i
                 className={
@@ -381,7 +383,7 @@ export default function Layout({ title, children, description }) {
               </p>
             </div>
           </Link>
-          <Link href={`/login`}>
+          <Link href={`/login`} passHref>
             <div className="layout-my-notifi wrapper">
               <div className="layout-my-notifi-bell bell" id="bell-1">
                 <i
