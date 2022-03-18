@@ -1,5 +1,6 @@
 @import "./component_index";
 @import "./navmenuanalysis";
+@import "./news";
 
 .analysis {
   &-baner {
@@ -52,18 +53,17 @@
     }
   }
   &-component {
-    margin: 0 15% 50px 15%;
-    background-color: #fff;
+    // margin: 0 15% 50px 15%;
     display: flex;
     &-navigation {
-      margin: 0 15%;
+      // margin: 0 15%;
       &-p {
         font-size: 18px;
       }
     }
     // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     &_index {
-      width: 80%;
+      width: 100%;
       margin-right: 20px;
       &-header {
         &-h1 {
@@ -74,6 +74,10 @@
         &-h3 {
           text-align: center;
           font-size: 20px;
+        }
+        &-p {
+          color: #222;
+          text-align: right;
         }
       }
       &-content {
@@ -87,7 +91,6 @@
     }
 
     &_list {
-      width: 20%;
       margin-left: 20px;
       margin-top: 50px;
       &-block {
@@ -172,3 +175,14 @@
   height: 160px;
 }
 // dropdown menu
+// chung css của các components
+.menu-analysis {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15%;
+  &-body {
+    width: 85%;
+  }
+  &-list {
+  }
+}

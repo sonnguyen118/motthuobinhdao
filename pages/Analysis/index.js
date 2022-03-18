@@ -4,6 +4,7 @@ import Link from "next/link";
 import Layout from "../Components/Layout";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import ListAnalysis from "../Components/ListAnalysis";
 
 const Analysis = ({ children }) => {
   //   const DynamicComponent = dynamic(() => import("../components/hello"));
@@ -225,7 +226,6 @@ const Analysis = ({ children }) => {
             </div>
           </Link>
         </div>
-        <div className="">{children}</div>
         <div className="analysis-menu">
           <nav className="analysis-menu-sidebar-navigation">
             <ul>
@@ -255,6 +255,12 @@ const Analysis = ({ children }) => {
               </li>
             </ul>
           </nav>
+        </div>
+        <div className="menu-analysis">
+          <div className="menu-analysis-body">{children}</div>
+          <div className="menu-analysis-list">
+            <ListAnalysis />
+          </div>
         </div>
       </div>
     </Layout>
