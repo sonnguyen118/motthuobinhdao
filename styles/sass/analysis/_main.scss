@@ -4,7 +4,7 @@
 .analysis {
   &-baner {
     background-color: #333;
-    height: 300px;
+    height: 360px;
   }
   &-navbar {
     margin: 50px 15%;
@@ -55,9 +55,16 @@
     margin: 0 15% 50px 15%;
     background-color: #fff;
     display: flex;
+    &-navigation {
+      margin: 0 15%;
+      &-p {
+        font-size: 18px;
+      }
+    }
     // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     &_index {
       width: 80%;
+      margin-right: 20px;
       &-header {
         &-h1 {
           text-align: center;

@@ -4,6 +4,11 @@ import Image from "next/image";
 const DangNgoai = () => {
   return (
     <Analysis>
+      <div className="analysis-component-navigation">
+        <p className="analysis-component-navigation-p">
+          Nghiên Cứu Lịch Sử {">"} Đàng Ngoài
+        </p>
+      </div>
       <div className="analysis-component">
         <div className="analysis-component_index">
           <div className="analysis-component_index-header">
@@ -20,6 +25,7 @@ const DangNgoai = () => {
             Đông Kinh, Kinh Kỳ hay Kẻ Chợ). 1592 nhà Mạc rút lên Cao Bằng, chính
             thức kết thức kết thúc thời kỳ chuyên chính của Nhà Mạc tại Thăng
             Long. <br></br>
+            <br></br>
             Đến năm 1786 khi Nguyễn Huệ kéo quân ra Bắc tiêu diệt thế lực họ
             Trịnh, đất nước tái thống nhất dưới triều Lê trên danh nghĩa trong
             một thời gian ngắn

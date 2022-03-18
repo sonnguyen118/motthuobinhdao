@@ -1,37 +1,40 @@
 import React from "react";
 import Analysis from "../index";
 import Image from "next/image";
-
-const PhongTucLeNghi = () => {
+const DangNgoai = () => {
   return (
     <Analysis>
       <div className="analysis-component-navigation">
         <p className="analysis-component-navigation-p">
-          Nghiên Cứu Lịch Sử {">"} Đàng Ngoài {">"} Phong Tục Lễ Nghi
+          Nghiên Cứu Lịch Sử {">"} Nhà Mạc
         </p>
       </div>
       <div className="analysis-component">
         <div className="analysis-component_index">
           <div className="analysis-component_index-header">
-            <h1 className="analysis-component_index-header-h1">
-              PHONG TỤC LỄ NGHI ĐÀNG NGOÀI
-            </h1>
+            <h1 className="analysis-component_index-header-h1">NHÀ MẠC</h1>
             <h3 className="analysis-component_index-header-h3">
-              VUA LÊ - CHÚA TRỊNH
+              NAM BẮC TRIỀU
             </h3>
           </div>
           <div className="analysis-component_index-content">
-            Đàng Ngoài (sử liệu chữ Hán: 北河 Bắc Hà) hay An Nam (chữ Hán:
-            安南國 / An Nam quốc), Vương quốc Đông Kinh là tên gọi vùng lãnh thổ
-            Đại Việt kiểm soát bởi Chúa Trịnh, xác định từ sông Gianh (tỉnh
-            Quảng Bình) trở ra Bắc. Kinh đô Đàng Ngoài là Thăng Long (còn gọi là
-            Đông Kinh, Kinh Kỳ hay Kẻ Chợ). 1592 nhà Mạc rút lên Cao Bằng, chính
-            thức kết thức kết thúc thời kỳ chuyên chính của Nhà Mạc tại Thăng
-            Long. <br></br>
+            Nhà Mạc (chữ Hán: 莫朝 / Mạc triều) là triều đại quân chủ trong lịch
+            sử Việt Nam, bắt đầu khi Mạc Đăng Dung, sau khi dẹp được các bè phái
+            trong cung đình, đã ép vua Lê Cung Hoàng nhà Hậu Lê nhường ngôi
+            tháng 6 năm 1527 và chấm dứt khi vua Mạc Mậu Hợp lập con trai là Mạc
+            Toàn lên ngôi, bị quân đội Lê-Trịnh do Trịnh Tùng chỉ huy đánh bại
+            vào cuối năm 1592 – Sau đó Mạc Toàn lên ngôi nhưng tại vị chỉ được 2
+            tháng, tổng cộng thời gian tồn tại chính thức của triều đại là gần
+            66 năm. Tuy nhiên, giai đoạn sau đó hậu duệ nhà Mạc như Mạc Kính
+            Chỉ, Mạc Kính Cung, Mạc Kính Khoan, Mạc Kính Vũ vẫn còn tiếp tục
+            chống lại nhà Hậu Lê thời kỳ trung hưng đến tận năm 1677[1] tại khu
+            vực Cao Bằng.
             <br></br>
-            Đến năm 1786 khi Nguyễn Huệ kéo quân ra Bắc tiêu diệt thế lực họ
-            Trịnh, đất nước tái thống nhất dưới triều Lê trên danh nghĩa trong
-            một thời gian ngắn
+            <br></br>
+            Thời kỳ 1533-1592 trong lịch sử Việt Nam còn được gọi là thời kỳ
+            Nam-Bắc triều, do chính quyền nhà Mạc chỉ thực sự có quyền lực từ
+            địa phận Ninh Bình ngày nay trở ra, còn từ Thanh Hóa trở vào là thế
+            lực lấy danh nghĩa gây dựng lại nhà Lê từ năm 1533.
           </div>
 
           <div className="analysis-component_index-menu">
@@ -387,4 +390,4 @@ const PhongTucLeNghi = () => {
   );
 };
 
-export default PhongTucLeNghi;
+export default DangNgoai;

@@ -1,37 +1,34 @@
 import React from "react";
 import Analysis from "../index";
 import Image from "next/image";
-
-const PhongTucLeNghi = () => {
+const DangNgoai = () => {
   return (
     <Analysis>
       <div className="analysis-component-navigation">
         <p className="analysis-component-navigation-p">
-          Nghiên Cứu Lịch Sử {">"} Đàng Ngoài {">"} Phong Tục Lễ Nghi
+          Nghiên Cứu Lịch Sử {">"} Đàng Ngoài
         </p>
       </div>
       <div className="analysis-component">
         <div className="analysis-component_index">
           <div className="analysis-component_index-header">
-            <h1 className="analysis-component_index-header-h1">
-              PHONG TỤC LỄ NGHI ĐÀNG NGOÀI
-            </h1>
+            <h1 className="analysis-component_index-header-h1">ĐÀNG NGOÀI</h1>
             <h3 className="analysis-component_index-header-h3">
               VUA LÊ - CHÚA TRỊNH
             </h3>
           </div>
           <div className="analysis-component_index-content">
-            Đàng Ngoài (sử liệu chữ Hán: 北河 Bắc Hà) hay An Nam (chữ Hán:
-            安南國 / An Nam quốc), Vương quốc Đông Kinh là tên gọi vùng lãnh thổ
-            Đại Việt kiểm soát bởi Chúa Trịnh, xác định từ sông Gianh (tỉnh
-            Quảng Bình) trở ra Bắc. Kinh đô Đàng Ngoài là Thăng Long (còn gọi là
-            Đông Kinh, Kinh Kỳ hay Kẻ Chợ). 1592 nhà Mạc rút lên Cao Bằng, chính
-            thức kết thức kết thúc thời kỳ chuyên chính của Nhà Mạc tại Thăng
-            Long. <br></br>
+            Đàng Trong (塘冲), hay Nam Hà (chữ Hán: 南河) là tên gọi vùng lãnh
+            thổ Đại Việt do chúa Nguyễn kiểm soát, xác định từ sông Gianh (Quảng
+            Bình) trở vào Nam.[1] Bắt đầu từ năm 1600, khi từ Bắc trở về Thuận
+            Hóa, Nguyễn Hoàng đã quyết tâm xây dựng một thế lực độc lập, và các
+            đời chúa Nguyễn tiếp sau ở thế đối đầu với thế lực vua Lê – chúa
+            Trịnh, cho đến tháng 12 năm 1774, quân Trịnh chiếm được Phú Xuân.
             <br></br>
-            Đến năm 1786 khi Nguyễn Huệ kéo quân ra Bắc tiêu diệt thế lực họ
-            Trịnh, đất nước tái thống nhất dưới triều Lê trên danh nghĩa trong
-            một thời gian ngắn
+            <br></br>
+            Đến năm 1777 khi Nguyễn Huệ tiêu diệt thế lực họ Nguyễn chỉ còn
+            Nguyễn Ánh chạy thoát.Triều đại các chúa Nguyễn kéo dài hơn 200 năm
+            chính thức khép lại.
           </div>
 
           <div className="analysis-component_index-menu">
@@ -387,4 +384,4 @@ const PhongTucLeNghi = () => {
   );
 };
 
-export default PhongTucLeNghi;
+export default DangNgoai;

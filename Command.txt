@@ -8,3 +8,9 @@ yarn add 3d-react-carousal
 
 yarn add semantic-ui-react semantic-ui-css
 npm uninstall semantic-ui-react semantic-ui-css
+không dùng ui-react
+
+yarn add react-dropdown
+npm install react-dropdown  --save
+npm uninstall react-dropdown  --save
+bỏ k dùng react-dropdown

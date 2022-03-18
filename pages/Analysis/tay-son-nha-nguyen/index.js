@@ -1,37 +1,43 @@
 import React from "react";
 import Analysis from "../index";
 import Image from "next/image";
-
-const PhongTucLeNghi = () => {
+const DangNgoai = () => {
   return (
     <Analysis>
       <div className="analysis-component-navigation">
         <p className="analysis-component-navigation-p">
-          Nghiên Cứu Lịch Sử {">"} Đàng Ngoài {">"} Phong Tục Lễ Nghi
+          Nghiên Cứu Lịch Sử {">"} Tây Sơn - Tiền Nguyễn
         </p>
       </div>
       <div className="analysis-component">
         <div className="analysis-component_index">
           <div className="analysis-component_index-header">
             <h1 className="analysis-component_index-header-h1">
-              PHONG TỤC LỄ NGHI ĐÀNG NGOÀI
+              TÂY SƠN - TIỀN NGUYỄN
             </h1>
             <h3 className="analysis-component_index-header-h3">
-              VUA LÊ - CHÚA TRỊNH
+              QUANG TRUNG - GIA LONG
             </h3>
           </div>
           <div className="analysis-component_index-content">
-            Đàng Ngoài (sử liệu chữ Hán: 北河 Bắc Hà) hay An Nam (chữ Hán:
-            安南國 / An Nam quốc), Vương quốc Đông Kinh là tên gọi vùng lãnh thổ
-            Đại Việt kiểm soát bởi Chúa Trịnh, xác định từ sông Gianh (tỉnh
-            Quảng Bình) trở ra Bắc. Kinh đô Đàng Ngoài là Thăng Long (còn gọi là
-            Đông Kinh, Kinh Kỳ hay Kẻ Chợ). 1592 nhà Mạc rút lên Cao Bằng, chính
-            thức kết thức kết thúc thời kỳ chuyên chính của Nhà Mạc tại Thăng
-            Long. <br></br>
+            Nhà Tây Sơn chữ Nôm: 家西山, chữ Hán: 西山朝 / Tây Sơn triều là một
+            triều đại quân chủ trong lịch sử Việt Nam tồn tại từ năm 1778 đến
+            năm 1802, được thành lập trong bối cảnh tranh chấp quyền lực cuối
+            thời Lê Trung hưng 1533 - 1789. Theo cách gọi của phần lớn sử gia,
+            nhất là các sử gia hiện đại tại Việt Nam thì nhà Tây Sơn được dùng
+            để gọi triều đại của anh em Nguyễn Nhạc, Nguyễn Lữ và Nguyễn Huệ để
+            phân biệt với nhà Nguyễn của Nguyễn Ánh vì cùng họ Nguyễn. Ngoài ra,
+            Tây Sơn cũng chỉ các lãnh tụ và quân đội khởi nghĩa xuất thân từ ấp
+            Tây Sơn; cũng được dùng làm tên cuộc chiến của Tây Sơn.
             <br></br>
-            Đến năm 1786 khi Nguyễn Huệ kéo quân ra Bắc tiêu diệt thế lực họ
-            Trịnh, đất nước tái thống nhất dưới triều Lê trên danh nghĩa trong
-            một thời gian ngắn
+            <br></br>
+            Nhà Nguyễn chữ Nôm: 茹阮, chữ Hán: 阮朝; Hán-Việt: Nguyễn triều là
+            triều đại quân chủ cuối cùng trong lịch sử Việt Nam. Nhà Nguyễn được
+            thành lập sau khi Nguyễn Ánh Gia Long lên ngôi hoàng đế năm 1802 và
+            kết thúc khi Bảo Đại thoái vị vào năm 1945, tổng cộng là 143 năm.
+            Triều Nguyễn là một triều đại đánh dấu nhiều thăng trầm trong lịch
+            sử Việt Nam, đặc biệt là cuộc xâm lược của người Pháp giữa thế kỷ
+            19.
           </div>
 
           <div className="analysis-component_index-menu">
@@ -387,4 +393,4 @@ const PhongTucLeNghi = () => {
   );
 };
 
-export default PhongTucLeNghi;
+export default DangNgoai;
