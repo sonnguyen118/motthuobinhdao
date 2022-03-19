@@ -2,12 +2,13 @@
   &-title {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
     &-icon {
-      font-size: 28px;
+      font-size: 24px;
       margin-right: 20px;
     }
     &-p {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: bold;
       border-bottom: 2px solid #ccc;
       width: 100%;
@@ -15,10 +16,145 @@
   }
   &-content {
     margin-left: 35px;
+    margin-bottom: 35px;
     opacity: 1;
+    display: flex;
+    &_text {
+      width: 65%;
+      &-p {
+        text-align: justify;
+      }
+    }
+    &_block {
+      border: 1px solid #ccc;
+      width: 35%;
+      margin-left: 20px;
+      &-title {
+        background-color: #555;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      &-image {
+        width: 300px;
+        height: 180px;
+        position: relative;
+        margin: 0 auto;
+      }
+      &-subimage {
+        font-size: 14px;
+        text-align: center;
+        color: #333;
+      }
+    }
     // display: none;
-    &-p {
-      text-align: justify;
+  }
+}
+
+.audio-box {
+  width: 400px !important;
+  &-header {
+    display: flex;
+    align-items: center;
+    &-img {
+      margin-left: 55px;
+      width: 50px;
+      height: 50px;
+      position: relative;
+    }
+    &-text {
+      font-size: 18px;
+      margin-left: 30px;
+      color: black;
+    }
+  }
+}
+
+.app-audio {
+  position: absolute;
+  left: 60px;
+  margin-top: -80px;
+  display: none;
+}
+.app-audi:hover .app-audio {
+  display: block;
+}
+
+.setting {
+  &:hover &-block {
+    display: block;
+  }
+  &-block {
+    position: absolute;
+    display: none;
+    left: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 20%);
+    border-radius: 1rem;
+    margin-top: -65px;
+    &-line {
+      width: 200px;
+      &-title {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      &-input {
+        // color: #ccc;
+        text-align: left;
+        padding-left: 35px;
+        &-box {
+          font-size: 16px;
+        }
+
+        &-label {
+          color: black;
+          font-size: 16px;
+          padding-left: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.settingColor {
+  &:hover &-block {
+    display: block;
+  }
+  &-icon {
+  }
+  &-block {
+    position: absolute;
+    display: none;
+    left: 60px;
+    width: 120px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 20%);
+    border-radius: 1rem;
+    margin-top: -50px;
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      &-item {
+        width: 60px;
+        height: 100%;
+
+        &:hover {
+          background-color: #ccc;
+        }
+        &-icon {
+          margin-top: 25px;
+          color: black;
+          font-size: 28px;
+        }
+      }
     }
   }
 }
