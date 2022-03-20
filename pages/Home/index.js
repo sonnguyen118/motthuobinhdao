@@ -45,18 +45,13 @@ const Homee = () => {
         </label>
       </div>
       <div className="home-aboutus">
-        <h1 className="home-aboutus">VỀ CHÚNG TÔI</h1>
+        <h1 className="home-aboutus-title">VỀ CHÚNG TÔI</h1>
         <Aboutus />
       </div>
 
-      <div className="home-listproduct">
+      {/* <div className="home-listproduct">
         <ListProject />
-      </div>
-
-      <div className="home-slideshow">
-        <h1 className="home-slideshow-title">Concept Art Gallery</h1>
-        <Slideshow />
-      </div>
+      </div> */}
       <div>
         <Analysis />
       </div>

@@ -164,7 +164,7 @@ const DangNgoai = () => {
                 : "analysis-component_index-content"
             }
           >
-            Đàng Ngoài (sử liệu chữ Hán: 北河 Bắc Hà) hay An Nam (chữ Hán:
+            Đàng Ngoài (sử liệu chữ Hán: 北河 Bắc Hà abc) hay An Nam (chữ Hán:
             安南國 / An Nam quốc), Vương quốc Đông Kinh là tên gọi vùng lãnh thổ
             Đại Việt kiểm soát bởi Chúa Trịnh, xác định từ sông Gianh (tỉnh
             Quảng Bình) trở ra Bắc. Kinh đô Đàng Ngoài là Thăng Long (còn gọi là
@@ -295,11 +295,12 @@ const DangNgoai = () => {
                     className="audio-box"
                     // style={{ width: "300px" }}
                     style={{ borderRadius: "1rem" }}
-                    autoPlay
+                    autoPlay={false}
+                    autoPlayAfterSrcChange={false}
                     // layout="horizontal"
                     // layout="vertical"
                     layout="stacked"
-                    src={`/media/voice-men-kientruc-chuakeo.mp3`}
+                    src={`/media/dang-ngoai-index-men.wav`}
                     onPlay={(e) => onClickVoice()}
                     onPause={(e) => onClickVoice()}
                     showSkipControls={false}
@@ -336,7 +337,7 @@ const DangNgoai = () => {
                     // layout="horizontal"
                     // layout="vertical"
                     layout="stacked"
-                    src={`/media/voice-woman-kientruc-chuakeo.mp3`}
+                    src={`/media/dang-ngoai-index-women.wav`}
                     onPlay={(e) => onClickVoice()}
                     onPause={(e) => onClickVoice()}
                     showSkipControls={false}

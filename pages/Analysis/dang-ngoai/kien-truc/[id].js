@@ -553,7 +553,8 @@ const List = () => {
                     className="audio-box"
                     // style={{ width: "300px" }}
                     style={{ borderRadius: "1rem" }}
-                    autoPlay
+                    autoPlay={false}
+                    autoPlayAfterSrcChange={false}
                     // layout="horizontal"
                     // layout="vertical"
                     layout="stacked"

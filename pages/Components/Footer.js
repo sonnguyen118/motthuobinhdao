@@ -4,168 +4,172 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer-header">
-        <div className="row">
-          <div className="footer-header__col col">
-            <Image
-              className="footer-header__col-Image"
-              src={`/media/logo-red.png`}
-              width={151}
-              height={151}
-              alt="description of image"
-            />
-            <h1 className="footer-header__col-title">SUBSCRIBE</h1>
-            <input
-              className="footer-header__col-input"
-              placeholder="Enter Your Email"
-            ></input>
-            <button className="footer-header__col-button">
-              <span className="footer-header__col-button-span">SUBMIT</span>
-            </button>
-          </div>
-          <div className="footer-header__col col">
-            <h1 className="footer-header__col-title">SẢN PHẨM</h1>
-            <Link href="/shop" className="footer-header__col-text" passHref>
-              - Cửa hàng
-            </Link>
-            <Link href="/game" className="footer-header__col-text" passHref>
-              - Game
-            </Link>
-            <Link href="/films" className="footer-header__col-text" passHref>
-              - Phim
-            </Link>
-            <Link
-              href="/technology"
-              className="footer-header__col-text"
-              passHref
-            >
-              - Công nghệ
-            </Link>
-            <Link
-              href="/community"
-              className="footer-header__col-text"
-              passHref
-            >
-              - Cộng Đồng
-            </Link>
-            <Link href="/help" className="footer-header__col-text" passHref>
-              - Trợ giúp
-            </Link>
-            <Link href="/contact" className="footer-header__col-text" passHref>
-              - Liên Hệ
-            </Link>
-          </div>
-          <div className="footer-header__col col">
-            <h1 className="footer-header__col-title">DỰ ÁN</h1>
-            <Link href="/films" className="footer-header__col-text" passHref>
-              - Phim 3D cổ trang
-            </Link>
-            <Link href="/game" className="footer-header__col-text" passHref>
-              - Game
-            </Link>
-            <Link href="/films" className="footer-header__col-text" passHref>
-              - Cổ phục
-            </Link>
-          </div>
-          <div className="footer-header__col col">
-            <h1 className="footer-header__col-title">TRỤ SỞ CHÍNH</h1>
-            <div className="footer-header__col-text">
-              <i className="fa fa-volume-control-phone" />{" "}
-              <span className="footer-header__col-text-a">0981839980</span>
+    <footer className="footer-section">
+      <div className="container">
+        <div className="footer-cta pt-5 pb-5">
+          <div className="row">
+            <div className="col">
+              <div className="single-cta">
+                <i className="fas fa-map-marker-alt" />
+                <div className="cta-text">
+                  <h4>Find us</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                </div>
+              </div>
             </div>
-            <div className="footer-header__col-text">
-              <i className="fa fa-envelope-o" />{" "}
-              <span className="footer-header__col-text-a">
-                infor@critistudio.com
-              </span>
+            <div className="col">
+              <div className="single-cta">
+                <i className="fas fa-phone" />
+                <div className="cta-text">
+                  <h4>Call us</h4>
+                  <span>9876543210 0</span>
+                </div>
+              </div>
             </div>
-            <div className="footer-header__col-text">
-              <i className="fa fa-home" />{" "}
-              <span className="footer-header__col-text-a">
-                Đô Lương - Đông Hưng - Thái Bình
-              </span>
+            <div className="col">
+              <div className="single-cta">
+                <i className="far fa-envelope-open" />
+                <div className="cta-text">
+                  <h4>Mail us</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
             </div>
-            <div className="footer-header__col-social">
-              <Link
-                className="footer-header__col-social-Image"
-                href="https://www.facebook.com/CritiStudio"
-                passHref
-              >
-                <Image
-                  className="footer-header__col-social-Image-i"
-                  src={`/media/facebook.png`}
-                  width={40}
-                  height={40}
-                  alt="description of image"
-                />
-              </Link>
-
-              <Link
-                className="footer-header__col-social-Image"
-                href="https://www.instagram.com/Critistudio/"
-                passHref
-              >
-                <Image
-                  className="footer-header__col-social-Image-i"
-                  src={`/media/instagram.png`}
-                  width={40}
-                  height={40}
-                  alt="description of image"
-                />
-              </Link>
-
-              <Link
-                className="footer-header__col-social-Image"
-                href="https://www.linkedin.com/in/studio-criti-87049b232/"
-                passHref
-              >
-                <Image
-                  className="footer-header__col-social-Image-i"
-                  src={`/media/linkedin.png`}
-                  width={40}
-                  height={40}
-                  alt="description of image"
-                />
-              </Link>
-
-              <Link
-                className="footer-header__col-social-Image"
-                href="https://www.tiktok.com/@critistudio"
-                passHref
-              >
-                <Image
-                  className="footer-header__col-social-Image-i"
-                  src={`/media/tik-tok.png`}
-                  width={40}
-                  height={40}
-                  alt="description of image"
-                />
-              </Link>
-
-              <Link
-                className="footer-header__col-social-Image"
-                href="https://twitter.com/CritiStudio"
-                passHref
-              >
-                <Image
-                  className="footer-header__col-social-Image-i"
-                  src={`/media/twitter.png`}
-                  width={40}
-                  height={40}
-                  alt="description of image"
-                />
-              </Link>
+          </div>
+        </div>
+        <div className="footer-content pt-5 pb-5">
+          <div className="row">
+            <div className="col">
+              <div className="footer-widget">
+                <div className="footer-logo">
+                  <a href="index.html">
+                    <img
+                      src="https://i.ibb.co/QDy827D/ak-logo.png"
+                      className="img-fluid"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+                <div className="footer-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                    sed do eiusmod tempor incididuntut consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div className="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#">
+                    <i className="fab fa-facebook-f facebook-bg" />
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-twitter twitter-bg" />
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-google-plus-g google-bg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="footer-widget">
+                <div className="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">about</a>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                  </li>
+                  <li>
+                    <a href="#">portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Expert Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact us</a>
+                  </li>
+                  <li>
+                    <a href="#">Latest News</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col ">
+              <div className="footer-widget">
+                <div className="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div className="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div className="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button>
+                      <i className="fab fa-telegram-plane" />
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="footer-footer">
-        <p className="footer-footer__text">
-          © 2022 | Built, Powered, & Developed By: Nguyễn Văn Sơn
-        </p>
+      <div className="copyright-area">
+        <div className="container">
+          <div className="row">
+            <div className="col text-center text-lg-left">
+              <div className="copyright-text">
+                <p>
+                  Copyright © 2018, All Right Reserved{" "}
+                  <a href="https://codepen.io/anupkumar92/">Anup</a>
+                </p>
+              </div>
+            </div>
+            <div className="col d-none d-lg-block text-right">
+              <div className="footer-menu">
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy</a>
+                  </li>
+                  <li>
+                    <a href="#">Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
