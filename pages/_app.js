@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "../styles/sass/main.scss";
 // import "../styles/globals.css";
+import Layout from "../pages/Components/Layout";
 import { StoreProvider } from "../utils/Store";
 
 function MyApp({ Component, pageProps }) {

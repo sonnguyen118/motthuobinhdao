@@ -22,7 +22,6 @@ export default function Layout({ title, children, description }) {
     dispatch({ type: darkMode ? "DARK_MODE_OFF" : "DARK_MODE_ON" });
     const newDarkMode = !darkMode;
     Cookies.set("darkMode", newDarkMode ? "ON" : "OFF");
-    console.log(newDarkMode);
   };
   // console.log(state);
   // console.log(darkMode);
