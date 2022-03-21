@@ -525,50 +525,6 @@ header.scroll nav ul li.first-level.right span {
 
 //scss
 
-.layout-my {
-  display: flex;
-  position: fixed;
-  z-index: 999;
-  align-items: center;
-  justify-content: space-between;
-  top: 10px;
-  right: 200px;
-  &-login {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &-icon {
-      color: #fff;
-      font-size: 24px;
-      padding-left: 60px;
-      padding-right: 10px;
-    }
-    &-icon:hover {
-      cursor: pointer;
-    }
-    &-text {
-      color: #fff;
-      font-size: 18px;
-      width: 100px;
-    }
-    &-text:hover {
-      cursor: pointer;
-    }
-  }
-  &-notifi {
-    top: 5px;
-    &-bell {
-      &-icon {
-        font-size: 24px;
-      }
-    }
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
 .image-logo-header {
   width: 481px;
   height: 82px;
@@ -685,6 +641,9 @@ header.scroll nav ul li.first-level.right span {
     z-index: 100000;
     top: calc(100vh - 60px);
     width: 100%;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     &-menu {
       &-list {
         display: flex;
@@ -693,6 +652,204 @@ header.scroll nav ul li.first-level.right span {
       }
       &-link {
         display: block;
+      }
+    }
+  }
+}
+@include responsive_456 {
+  .header-PC {
+    display: none;
+  }
+  .header-mobile {
+    position: fixed;
+  }
+  .navbar-mobile {
+    z-index: 100000;
+    top: calc(100vh - 60px);
+    width: 100%;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    &-menu {
+      &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &-link {
+        display: block;
+      }
+    }
+  }
+}
+
+@include responsive_768 {
+  .header-mobile {
+    display: none;
+  }
+}
+@include responsive_992 {
+  .header-mobile {
+    display: none;
+  }
+}
+
+@include responsive_1024 {
+  .header-mobile {
+    display: none;
+  }
+}
+
+@include responsive_1200 {
+  .header-mobile {
+    display: none;
+  }
+}
+@include responsive_1200 {
+  .header-mobile {
+    display: none;
+  }
+}
+@include responsive_1440 {
+  .header-mobile {
+    display: none;
+  }
+  .layout-my {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    top: 10px;
+    right: 50px;
+    &-login {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-icon {
+        color: #fff;
+        font-size: 24px;
+        padding-left: 60px;
+        padding-right: 10px;
+      }
+      &-icon:hover {
+        cursor: pointer;
+      }
+      &-text {
+        color: #fff;
+        font-size: 18px;
+        width: 100px;
+      }
+      &-text:hover {
+        cursor: pointer;
+      }
+    }
+    &-notifi {
+      top: 5px;
+      &-bell {
+        &-icon {
+          font-size: 24px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+@include responsive_1650 {
+  .header-mobile {
+    display: none;
+  }
+  .layout-my {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    top: 10px;
+    right: 200px;
+    &-login {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-icon {
+        color: #fff;
+        font-size: 24px;
+        padding-left: 60px;
+        padding-right: 10px;
+      }
+      &-icon:hover {
+        cursor: pointer;
+      }
+      &-text {
+        color: #fff;
+        font-size: 18px;
+        width: 100px;
+      }
+      &-text:hover {
+        cursor: pointer;
+      }
+    }
+    &-notifi {
+      top: 5px;
+      &-bell {
+        &-icon {
+          font-size: 24px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+@include responsive_1900 {
+  .header-mobile {
+    display: none;
+  }
+  .layout-my {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    top: 10px;
+    right: 200px;
+    &-login {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-icon {
+        color: #fff;
+        font-size: 24px;
+        padding-left: 60px;
+        padding-right: 10px;
+      }
+      &-icon:hover {
+        cursor: pointer;
+      }
+      &-text {
+        color: #fff;
+        font-size: 18px;
+        width: 100px;
+      }
+      &-text:hover {
+        cursor: pointer;
+      }
+    }
+    &-notifi {
+      top: 5px;
+      &-bell {
+        &-icon {
+          font-size: 24px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
   }

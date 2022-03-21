@@ -33,19 +33,8 @@ const Analysis = () => {
                     textShadow: "0 0 20px rgba(0,0,0,0.5)",
                   }}
                 >
-                  <h1
-                    style={{
-                      marginTop: 0,
-                      marginBottom: "0.8vw",
-                      fontSize: "28px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Ấn Tín Các Triều Đại
-                  </h1>
-                  <p
-                    style={{ fontSize: "14px", fontWeight: 100, marginTop: 0 }}
-                  >
+                  <p className="slideshow_about-h1">Ấn Tín Các Triều Đại</p>
+                  <p className="slideshow_about-p">
                     Hệ thống ấn tín, các sử dụng qua các triều Mạc, Lê Trung
                     Hưng, Tây Sơn - đầu Nguyễn
                   </p>
@@ -70,19 +59,10 @@ const Analysis = () => {
                     textShadow: "0 0 20px rgba(0,0,0,0.5)",
                   }}
                 >
-                  <h1
-                    style={{
-                      marginTop: 0,
-                      marginBottom: "0.8vw",
-                      fontSize: "28px",
-                      fontWeight: "bold",
-                    }}
-                  >
+                  <p className="slideshow_about-h1">
                     Thiết Kế Chi Tiết Nhân Vật
-                  </h1>
-                  <p
-                    style={{ fontSize: "14px", fontWeight: 100, marginTop: 0 }}
-                  >
+                  </p>
+                  <p className="slideshow_about-p">
                     Chúng tôi sử dụng các phần mềm để dễ dàng tạo các model
                   </p>
                 </div>
@@ -106,19 +86,8 @@ const Analysis = () => {
                     textShadow: "0 0 20px rgba(0,0,0,0.5)",
                   }}
                 >
-                  <h1
-                    style={{
-                      marginTop: 0,
-                      marginBottom: "0.8vw",
-                      fontSize: "28px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Texture Chân Thực
-                  </h1>
-                  <p
-                    style={{ fontSize: "14px", fontWeight: 100, marginTop: 0 }}
-                  >
+                  <p className="slideshow_about-h1">Texture Chân Thực</p>
+                  <p className="slideshow_about-p">
                     Chúng tôi sử dụng các phần mềm để dễ dàng tạo các model
                   </p>
                 </div>

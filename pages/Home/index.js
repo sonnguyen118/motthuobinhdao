@@ -34,16 +34,23 @@ const Homee = () => {
         />
       </video>
 
-      <div className="block-switch">
+      <div className="block-switch1">
         {Volume == true ? (
-          <span className="block-switch-text">Đã Tắt Âm Thanh</span>
+          <span className="block-switch1-text">Đã Tắt Âm Thanh</span>
         ) : (
-          <span className="block-switch-text">Đang Bật Âm Thanh</span>
+          <span className="block-switch1-text">Đang Bật Âm Thanh</span>
         )}
-        <label className="switch">
-          <input type="checkbox" onChange={MuteAudioBackgroundVideo} />
-          <span className="slider round"></span>
-        </label>
+        <div className="button1-cover">
+          <div className="button1 r" id="button-3">
+            <input
+              type="checkbox"
+              className="checkbox"
+              onChange={MuteAudioBackgroundVideo}
+            />
+            <div className="knobs"></div>
+            <div className="layer"></div>
+          </div>
+        </div>
       </div>
       <div className="home-aboutus">
         <h1 className="home-aboutus-title">VỀ CHÚNG TÔI</h1>
