@@ -1,0 +1,32 @@
+@include responsive_768 {
+  .header-mobile {
+    display: none;
+  }
+}
+@include responsive_992 {
+  .header-mobile {
+    display: none;
+  }
+}
+
+@include responsive_1024 {
+  .header-mobile {
+    display: none;
+  }
+}
+
+@include responsive_1200 {
+  .header-mobile {
+    display: none;
+  }
+}
+@include responsive_1200 {
+  .header-mobile {
+    display: none;
+  }
+}
+@include responsive_1440 {
+  .header-mobile {
+    display: none;
+  }
+}

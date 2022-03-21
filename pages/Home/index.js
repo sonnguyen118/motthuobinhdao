@@ -17,6 +17,7 @@ const Homee = () => {
       console.log(Volume);
     }
   };
+
   return (
     <div className="home">
       <video

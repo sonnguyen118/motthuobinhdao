@@ -36,12 +36,20 @@ export default function Layout({ title, children, description }) {
 
   const [navbar, setNavbar] = useState(true);
   const [navbarHover, setNavbarHover] = useState(true);
+  const [backtotop, setBackToTop] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
       setNavbar(false);
     } else {
       setNavbar(true);
+    }
+  };
+  const SetbackToTop = () => {
+    if (window.scrollY >= 50) {
+      setBackToTop(true);
+    } else {
+      setBackToTop(false);
     }
   };
   const onMouseEnterHandler = () => {
@@ -53,7 +61,15 @@ export default function Layout({ title, children, description }) {
 
   useEffect(function onFirstMount() {
     window.addEventListener("scroll", changeBackground);
+    window.addEventListener("scroll", SetbackToTop);
   }, []);
+
+  useEffect(() => {
+    handleBackToTop();
+  }, []);
+  const handleBackToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <body
@@ -65,7 +81,7 @@ export default function Layout({ title, children, description }) {
             : ""
         }
       >
-        <navbar>
+        <navbar className="header-PC">
           <header className={navbar ? "" : "scroll"}>
             <div className="sticky-bg"></div>
             <a className="brand" href="http://pebbledesign.com/">
@@ -339,6 +355,47 @@ export default function Layout({ title, children, description }) {
           </header>
         </navbar>
 
+        <header className="header-mobile">
+          <nav className="navbar-mobile">
+            <div className="navbar-mobile-menu" id="menu">
+              <ul className="navbar-mobile-menu-list">
+                <li className="navbar-mobile-menu-item">
+                  <Link href="#" passHref>
+                    <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                      <i className="fas fa-home" />
+                      <p className="navbar-mobile-menu-name">Trang Chủ</p>
+                    </div>
+                  </Link>
+                </li>
+                <li className="navbar-mobile-menu-item">
+                  <Link href="#" passHref>
+                    <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                      <i className="fas fa-book-open" />
+                      <p className="navbar-mobile-menu-name">Nghiên Cứu</p>
+                    </div>
+                  </Link>
+                </li>
+                <li className="navbar-mobile-menu-item">
+                  <Link href="#" passHref>
+                    <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                      <i className="fas fa-briefcase" />
+                      <p className="navbar-mobile-menu-name">Dự Án</p>
+                    </div>
+                  </Link>
+                </li>
+                <li className="navbar-mobile-menu-item">
+                  <Link href="#" passHref>
+                    <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                      <i className="fas fa-user-alt" />
+                      <p className="navbar-mobile-menu-name">Đăng Nhập</p>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
         <div className="layout-my">
           <Link href={`/login`} passHref>
             <div className="layout-my-login">
@@ -389,7 +446,20 @@ export default function Layout({ title, children, description }) {
           </Link>
         </div>
         <div className="">{children}</div>
-
+        <div
+          className={backtotop ? "home-back-to-top active" : "home-back-to-top"}
+        >
+          <button className="noselect" onClick={handleBackToTop}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+            </svg>
+          </button>
+        </div>
         <footer className="">
           <Footer />
         </footer>
