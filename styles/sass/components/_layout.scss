@@ -747,8 +747,9 @@ header.scroll nav ul li.first-level.right span {
   }
   .navbar-mobile {
     z-index: 100000;
+    margin: 0;
     top: calc(100vh - 80px);
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
     height: 80px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -760,10 +761,11 @@ header.scroll nav ul li.first-level.right span {
       }
       &-link {
         width: 25vw;
-        padding-top: 10px;
+        padding-top: 15px;
         display: block;
+        margin: 0 auto;
         &-icon {
-          font-size: 20px;
+          font-size: 24px;
           color: #555;
         }
         &:hover {
@@ -800,6 +802,7 @@ header.scroll nav ul li.first-level.right span {
   }
   .navbar-mobile {
     z-index: 100000;
+    margin: 0;
     top: calc(100vh - 80px);
     width: 100vw;
     background-color: #fff;
@@ -813,10 +816,11 @@ header.scroll nav ul li.first-level.right span {
       }
       &-link {
         width: 25vw;
-        padding-top: 10px;
+        padding-top: 15px;
         display: block;
+        margin: 0 auto;
         &-icon {
-          font-size: 20px;
+          font-size: 24px;
           color: #555;
         }
         &:hover {

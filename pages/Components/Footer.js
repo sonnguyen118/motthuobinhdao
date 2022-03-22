@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer-section">
-      <div className="container">
+      <div className="container ">
         <div className="footer-cta pt-5 pb-5">
           <div className="row">
             <div className="col address-footer">
