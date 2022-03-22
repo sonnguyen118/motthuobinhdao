@@ -7,17 +7,15 @@ const Block = () => {
       <div className="home__block-2">
         <div className="home__block-2-Image">
           <Image
-            className="home__block-2-Image"
             src={`/media/block_1.jpg`}
-            width={360}
-            height={540}
             alt="description of image"
+            layout="fill"
+            data-testid="close-icon"
+            objectFit="contain"
           />
         </div>
         <div className="home__block-2-title">
-          <h1 className="home__block-2-title-h1">
-            DỰ ÁN PHIM 3D CỔ TRANG VIỆT NAM
-          </h1>
+          <p className="home__block-2-title-h1">DỰ ÁN PHIM 3D CỔ TRANG</p>
           <p className="home__block-2-title-span">
             Dự án Criti Studio đang phối hợp cùng các đối tác - chuyên gia sử
             học tạo dựng phim 3D - mô tả lịch sử 300 năm nội chiến Việt Nam từ
@@ -94,11 +92,12 @@ const Block = () => {
             </div>
             <div className="wrappers">
               <a className="cta" href="#">
-                <span>Đi Tới Dự Án</span>
+                <span className="wrappers-text">Đi Tới Dự Án</span>
                 <span>
                   <svg
-                    width="66px"
-                    height="43px"
+                    className="wrappers-sgv"
+                    // width="66px"
+                    // height="43px"
                     viewBox="0 0 66 43"
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +135,7 @@ const Block = () => {
       </div>
       <div className="home__block-3">
         <div className="home__block-3-title">
-          <h1 className="home__block-3-title-h1">TEXTURE CHÂN THỰC</h1>
+          <p className="home__block-3-title-h1">TEXTURE CHÂN THỰC</p>
           <p className="home__block-3-title-span">
             Texture Được dịch từ tiếng Anh-Trong nghệ thuật thị giác, kết cấu là
             chất lượng bề mặt cảm nhận của một tác phẩm nghệ thuật. Nó là một
@@ -205,11 +204,12 @@ const Block = () => {
             </div>
             <div className="wrappers">
               <a className="cta" href="#">
-                <span>Đi Tới Dự Án</span>
+                <span className="wrappers-text">Đi Tới Dự Án</span>
                 <span>
                   <svg
-                    width="66px"
-                    height="43px"
+                    className="wrappers-sgv"
+                    // width="26px"
+                    // height="23px"
                     viewBox="0 0 66 43"
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -247,10 +247,10 @@ const Block = () => {
 
         <div className="home__block-3-Image">
           <Image
-            className="home__block-3-Image"
             src={`/media/block_2.png`}
-            width={600}
-            height={600}
+            layout="fill"
+            data-testid="close-icon"
+            objectFit="contain"
             alt="description of image"
           />
         </div>

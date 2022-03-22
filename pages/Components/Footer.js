@@ -8,17 +8,17 @@ const Footer = () => {
       <div className="container">
         <div className="footer-cta pt-5 pb-5">
           <div className="row">
-            <div className="col">
+            <div className="col address-footer">
               <div className="single-cta">
                 <i className="fas fa-map-marker-alt" />
                 <div className="cta-text">
-                  <h4>Find us</h4>
+                  <h4 className="cta-text-h4">Find us</h4>
                   <span>1010 Avenue, sw 54321, chandigarh</span>
                 </div>
               </div>
             </div>
             <div className="col">
-              <div className="single-cta">
+              <div className="single-cta phone-email-footer">
                 <i className="fas fa-phone" />
                 <div className="cta-text">
                   <h4>Call us</h4>
@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col">
-              <div className="single-cta">
+              <div className="single-cta phone-email-footer mail-footer">
                 <i className="far fa-envelope-open" />
                 <div className="cta-text">
                   <h4>Mail us</h4>
@@ -71,7 +71,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col link-menu-footer">
               <div className="footer-widget">
                 <div className="footer-widget-heading">
                   <h3>Useful Links</h3>
