@@ -1,1 +1,210 @@
+// css phan slideshow them vao khi thanh mobile
+#slideshow1 {
+  overflow: hidden;
+  height: 50vw;
+  width: 100%;
+  margin: 0 auto;
+}
 
+.slide-wrapper {
+  width: 1000vw;
+  -webkit-animation: slide 50s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 50vw;
+  width: 100vw;
+}
+
+.slide:nth-child(1) {
+  background-image: url("/media/slide-baner-mobile-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide:nth-child(2) {
+  background-image: url("/media/slide-baner-mobile-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide:nth-child(3) {
+  background-image: url("/media/slide-baner-mobile-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide:nth-child(4) {
+  background-image: url("/media/slide-baner-mobile-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slide:nth-child(5) {
+  background-image: url("/media/slide-baner-mobile-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slide:nth-child(6) {
+  background-image: url("/media/slide-baner-mobile-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slide:nth-child(7) {
+  background-image: url("/media/slide-baner-mobile-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slide:nth-child(8) {
+  background-image: url("/media/slide-baner-mobile-8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slide:nth-child(9) {
+  background-image: url("/media/slide-baner-mobile-9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slide:nth-child(10) {
+  background-image: url("/media/slide-baner-mobile-10.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-number {
+  margin-top: 10vw;
+  color: #ccc;
+  text-align: center;
+  font-size: 24px;
+  &-p {
+    color: #ccc;
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 30px;
+  }
+  &-btn {
+    margin: 3vw auto 0 auto;
+    width: 85px;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  10% {
+    margin-left: -100vw;
+  }
+  20% {
+    margin-left: -200vw;
+  }
+  30% {
+    margin-left: -300vw;
+  }
+  40% {
+    margin-left: -400vw;
+  }
+  50% {
+    margin-left: -500vw;
+  }
+  60% {
+    margin-left: -600vw;
+  }
+  70% {
+    margin-left: -700vw;
+  }
+  80% {
+    margin-left: -800vw;
+  }
+  90% {
+    margin-left: -900vw;
+  }
+}
+
+// responsive
+@include responsive_200 {
+  .home__video {
+    display: none;
+  }
+}
+@include responsive_280 {
+  .home__video {
+    display: none;
+  }
+}
+@include responsive_320 {
+  .home__video {
+    display: none;
+  }
+}
+
+@include responsive_375 {
+  .home__video {
+    display: none;
+  }
+}
+
+@include responsive_425 {
+  .home__video {
+    display: none;
+  }
+}
+@include responsive_456 {
+  .home__video {
+    display: none;
+  }
+}
+
+@include responsive_768 {
+  #slideshow1 {
+    display: none;
+  }
+}
+
+@include responsive_992 {
+  #slideshow1 {
+    display: none;
+  }
+}
+
+@include responsive_1024 {
+  #slideshow1 {
+    display: none;
+  }
+}
+
+@include responsive_1200 {
+  #slideshow1 {
+    display: none;
+  }
+}
+@include responsive_1440 {
+  #slideshow1 {
+    display: none;
+  }
+}
+@include responsive_1650 {
+  #slideshow1 {
+    display: none;
+  }
+}
+@include responsive_1900 {
+  #slideshow1 {
+    display: none;
+  }
+}

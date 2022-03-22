@@ -1,4 +1,16 @@
 /* The switch - the box around the slider */
+
+// .button1-cover:before {
+//   counter-increment: button-counter;
+//   content: counter(button-counter);
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   color: #d7e3e3;
+//   font-size: 12px;
+//   //   line-height: 1;
+//   padding: 5px;
+// }
 .block-switch1 {
   position: fixed;
   left: 200px;
@@ -14,18 +26,6 @@
   margin-top: 5px;
   margin-left: 140px;
 }
-
-// .button1-cover:before {
-//   counter-increment: button-counter;
-//   content: counter(button-counter);
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   color: #d7e3e3;
-//   font-size: 12px;
-//   //   line-height: 1;
-//   padding: 5px;
-// }
 
 .button1-cover,
 .knobs,

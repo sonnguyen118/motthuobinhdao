@@ -4,6 +4,8 @@ import ListProject from "./ListProject";
 import Slideshow from "./Slideshow";
 import Block from "./Block";
 import Analysis from "./Analysis";
+import Image from "next/image";
+import Link from "next/link";
 
 const Homee = () => {
   const [Volume, setVolume] = useState(true);
@@ -33,7 +35,160 @@ const Homee = () => {
           type="video/mp4"
         />
       </video>
-
+      <div id="slideshow1">
+        <div className="slide-wrapper">
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+          <Link href={"/"} passHref>
+            <div className="slide">
+              <h1 className="slide-number">Texture Chân Thực</h1>
+              <p className="slide-number-p">
+                Sử dụng vật liệu texture da thực, metahumen khiến cho tạo hình
+                nhân vật sống động và cực kỳ chân thực
+              </p>
+              <button
+                type="button"
+                className="slide-number-btn btn btn-outline-secondary"
+              >
+                Xem Chi Tiết
+              </button>
+            </div>
+          </Link>
+        </div>
+      </div>
       <div className="block-switch1">
         {Volume == true ? (
           <span className="block-switch1-text">Đã Tắt Âm Thanh</span>
