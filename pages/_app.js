@@ -1,8 +1,10 @@
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/sass/main.scss";
+
 // import "../styles/globals.css";
 import Layout from "../pages/Components/Layout";
 import { StoreProvider } from "../utils/Store";
+import Router from "next/router";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
