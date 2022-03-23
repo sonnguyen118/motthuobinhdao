@@ -440,7 +440,7 @@
       &-3 {
         padding: 0 2%;
         //   background-color: black;
-        height: 200px;
+        height: 240px;
         display: flex;
         justify-content: space-between;
 
@@ -462,10 +462,10 @@
           }
         }
         &-Image {
-          left: 30px;
+          left: 0px;
           position: relative;
           width: 300px;
-          width: 250px;
+          height: 200px;
         }
       }
       &-title-linkhear {
@@ -600,8 +600,7 @@
         &-Image {
           position: relative;
           width: 300px;
-          width: 200px;
-          right: 0;
+          height: 300px;
         }
       }
       &-title-linkhear {
