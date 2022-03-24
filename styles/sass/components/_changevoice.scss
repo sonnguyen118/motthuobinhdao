@@ -1,0 +1,95 @@
+.changevoice {
+  padding: 20px;
+  width: 50vw;
+  position: fixed;
+  top: 150px;
+  left: 400px;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 20px;
+  &-background {
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+  }
+  &-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 38px;
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
+  &-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &-sub {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  &-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // width: 25vw;
+    &-block {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 320px;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 20px;
+      border: 0.5px solid transparent;
+      //   height: 60px;
+      &-sass {
+        display: flex;
+        align-items: center;
+      }
+      &-img {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+      }
+      &-name {
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      &-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        &-icon {
+          font-size: 30px;
+          margin-top: 15px;
+          margin-left: 17px;
+        }
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+      &:hover {
+        border: 0.5px solid red;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.chanvoice-active {
+  background-color: #e52327;
+}

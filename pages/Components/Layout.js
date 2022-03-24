@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 // import NextLink from "next/link";
 import Image from "next/image";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 import { Store } from "../../utils/Store";
 import Cookies from "js-cookie";
@@ -15,7 +15,7 @@ export default function Layout({ title, children, description }) {
   const styleColorBook = Cookies.get("color") == "book";
   const styleColorNight = Cookies.get("color") == "night";
 
-  // const router = useRouter();
+  const router = useRouter();
   const { state, dispatch } = useContext(Store);
   const { darkMode, cart } = state;
   const darkModeChangeHandler = () => {
@@ -37,34 +37,6 @@ export default function Layout({ title, children, description }) {
   const [navbar, setNavbar] = useState(true);
   const [navbarHover, setNavbarHover] = useState(true);
   const [backtotop, setBackToTop] = useState(false);
-  const [navbarmobile1, setNavbarMobile1] = useState(false);
-  const [navbarmobile2, setNavbarMobile2] = useState(false);
-  const [navbarmobile4, setNavbarMobile4] = useState(false);
-  const [navbarmobile3, setNavbarMobile3] = useState(false);
-  const handleOnclickMenuMobile1 = () => {
-    setNavbarMobile1(true);
-    setNavbarMobile2(false);
-    setNavbarMobile3(false);
-    setNavbarMobile4(false);
-  };
-  const handleOnclickMenuMobile2 = () => {
-    setNavbarMobile2(true);
-    setNavbarMobile1(false);
-    setNavbarMobile3(false);
-    setNavbarMobile4(false);
-  };
-  const handleOnclickMenuMobile3 = () => {
-    setNavbarMobile3(true);
-    setNavbarMobile1(false);
-    setNavbarMobile1(false);
-    setNavbarMobile4(false);
-  };
-  const handleOnclickMenuMobile4 = () => {
-    setNavbarMobile4(true);
-    setNavbarMobile1(false);
-    setNavbarMobile2(false);
-    setNavbarMobile3(false);
-  };
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
@@ -388,128 +360,72 @@ export default function Layout({ title, children, description }) {
           <nav className="navbar-mobile">
             <div className="navbar-mobile-menu" id="menu">
               <ul className="navbar-mobile-menu-list">
-                <li
-                  className="navbar-mobile-menu-item"
-                  onClick={handleOnclickMenuMobile1}
-                >
-                  <Link href="#" passHref>
-                    <div
-                      className={
-                        navbarmobile1
-                          ? "navbar-mobile-menu-link navbar-mobile-menu-link-is-active"
-                          : "navbar-mobile-menu-link"
-                      }
-                    >
-                      <i
-                        className={
-                          navbarmobile1
-                            ? "navbar-mobile-menu-link-icon fas fa-home active-click-menu"
-                            : "navbar-mobile-menu-link-icon fas fa-home"
-                        }
-                      />
-                      <p
-                        className={
-                          navbarmobile1
-                            ? "navbar-mobile-menu-name active-click-menu"
-                            : "navbar-mobile-menu-name"
-                        }
-                      >
-                        Trang Chủ
-                      </p>
-                    </div>
+                <li className="navbar-mobile-menu-item">
+                  <Link href={"/"} passHref>
+                    {router.pathname == "/" ? (
+                      <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                        <i className="navbar-mobile-menu-link-icon fas fa-home active-click-menu" />
+                        <p className="navbar-mobile-menu-name active-click-menu">
+                          Trang Chủ
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="navbar-mobile-menu-link ">
+                        <i className="navbar-mobile-menu-link-icon fas fa-home" />
+                        <p className="navbar-mobile-menu-name">Trang Chủ</p>
+                      </div>
+                    )}
                   </Link>
                 </li>
-                <li
-                  className="navbar-mobile-menu-item"
-                  onClick={handleOnclickMenuMobile2}
-                >
-                  <Link href="#" passHref>
-                    <div
-                      className={
-                        navbarmobile2
-                          ? "navbar-mobile-menu-link navbar-mobile-menu-link-is-active"
-                          : "navbar-mobile-menu-link"
-                      }
-                    >
-                      <i
-                        className={
-                          navbarmobile2
-                            ? "navbar-mobile-menu-link-icon fas fa-book-open active-click-menu"
-                            : "navbar-mobile-menu-link-icon fas fa-book-open"
-                        }
-                      />
-                      <p
-                        className={
-                          navbarmobile2
-                            ? "navbar-mobile-menu-name active-click-menu"
-                            : "navbar-mobile-menu-name"
-                        }
-                      >
-                        Nghiên Cứu
-                      </p>
-                    </div>
+                <li className="navbar-mobile-menu-item">
+                  <Link href={"/Analysis"} passHref>
+                    {router.pathname.includes("Analysis") ? (
+                      <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                        <i className="navbar-mobile-menu-link-icon fas fa-book-open active-click-menu" />
+                        <p className="navbar-mobile-menu-name active-click-menu">
+                          Nghiên Cứu
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="navbar-mobile-menu-link ">
+                        <i className="navbar-mobile-menu-link-icon fas fa-book-open" />
+                        <p className="navbar-mobile-menu-name">Nghiên Cứu</p>
+                      </div>
+                    )}
                   </Link>
                 </li>
-                <li
-                  className="navbar-mobile-menu-item"
-                  onClick={handleOnclickMenuMobile3}
-                >
-                  <Link href="#" passHref>
-                    <div
-                      className={
-                        navbarmobile3
-                          ? "navbar-mobile-menu-link navbar-mobile-menu-link-is-active"
-                          : "navbar-mobile-menu-link"
-                      }
-                    >
-                      <i
-                        className={
-                          navbarmobile3
-                            ? "navbar-mobile-menu-link-icon fas fa-briefcase active-click-menu"
-                            : "navbar-mobile-menu-link-icon fas fa-briefcase"
-                        }
-                      />
-                      <p
-                        className={
-                          navbarmobile3
-                            ? "navbar-mobile-menu-name active-click-menu"
-                            : "navbar-mobile-menu-name"
-                        }
-                      >
-                        Dự Án
-                      </p>
-                    </div>
+                <li className="navbar-mobile-menu-item">
+                  <Link href={"/Project"} passHref>
+                    {router.pathname.includes("Project") ? (
+                      <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                        <i className="navbar-mobile-menu-link-icon fas fa-briefcase active-click-menu" />
+                        <p className="navbar-mobile-menu-name active-click-menu">
+                          Dự Án
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="navbar-mobile-menu-link ">
+                        <i className="navbar-mobile-menu-link-icon fas fa-briefcase" />
+                        <p className="navbar-mobile-menu-name">Dự Án</p>
+                      </div>
+                    )}
                   </Link>
                 </li>
-                <li
-                  className="navbar-mobile-menu-item"
-                  onClick={handleOnclickMenuMobile4}
-                >
-                  <Link href="#" passHref>
-                    <div
-                      className={
-                        navbarmobile4
-                          ? "navbar-mobile-menu-link navbar-mobile-menu-link-is-active"
-                          : "navbar-mobile-menu-link"
-                      }
-                    >
-                      <i
-                        className={
-                          navbarmobile4
-                            ? "navbar-mobile-menu-link-icon fas fa-user-alt active-click-menu"
-                            : "navbar-mobile-menu-link-icon fas fa-user-alt"
-                        }
-                      />
-                      <p
-                        className={
-                          navbarmobile4
-                            ? "navbar-mobile-menu-name active-click-menu"
-                            : "navbar-mobile-menu-name"
-                        }
-                      >
-                        Đăng Nhập
-                      </p>
-                    </div>
+                <li className="navbar-mobile-menu-item">
+                  <Link href={"/login"} passHref>
+                    {router.pathname.includes("login") ? (
+                      <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                        <i className="navbar-mobile-menu-link-icon fas fa-user-alt active-click-menu" />
+                        <p className="navbar-mobile-menu-name active-click-menu">
+                          Đăng Nhập
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="navbar-mobile-menu-link ">
+                        <i className="navbar-mobile-menu-link-icon fas fa-user-alt" />
+                        <p className="navbar-mobile-menu-name">Đăng Nhập</p>
+                      </div>
+                    )}
                   </Link>
                 </li>
               </ul>

@@ -153,3 +153,10 @@
   background: -webkit-linear-gradient(to right, #0abfbc, #fc354c);
   background: linear-gradient(to right, #0abfbc, #fc354c);
 }
+
+.messenger-notify {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  z-index: 200;
+}

@@ -9,4 +9,5 @@ yarn add 3d-react-carousal
 
 npm i react-h5-audio-player
 
-npm i js-cookie
+
+npm install @madzadev/audio-player
