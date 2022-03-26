@@ -1,0 +1,185 @@
+.my-slide-index-analysis {
+  margin-bottom: 50px;
+}
+#my-slide-index-analysis-slideshow {
+  text-align: center;
+  overflow: hidden;
+  height: 400px;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.my-slide-index-analysis-slide-wrapper {
+  width: 300vw;
+  -webkit-animation: my-slide-index-analysis 120s ease infinite;
+}
+
+.my-slide-index-analysis-slide1,
+.my-slide-index-analysis-slide2,
+.my-slide-index-analysis-slide3,
+.my-slide-index-analysis-slide4 {
+  float: left;
+  height: 400px;
+  width: 50vw;
+  border-radius: 10px;
+}
+.my-slide-index-analysis-slide1:nth-child,
+.my-slide-index-analysis-slide2:nth-child,
+.my-slide-index-analysis-slide3:nth-child,
+.my-slide-index-analysis-slide4:nth-child {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+// nhà mạc
+.my-slide-index-analysis-slide1:nth-child(1) {
+  background: url("/media/analysis/index/nha-mac-kinh-te-chinh-tri.png");
+}
+.my-slide-index-analysis-slide1:nth-child(2) {
+  background: url("/media/analysis/index/nha-mac-vat-dung-do-cu.png");
+}
+.my-slide-index-analysis-slide1:nth-child(3) {
+  background: url("/media/analysis/index/nha-mac-trang-phuc.png");
+}
+.my-slide-index-analysis-slide1:nth-child(4) {
+  background: url("/media/analysis/index/nha-mac-phong-tuc-le-nghi.png");
+}
+.my-slide-index-analysis-slide1:nth-child(5) {
+  background: url("/media/analysis/index/nha-mac-kien-truc.png");
+}
+.my-slide-index-analysis-slide1:nth-child(6) {
+  background: url("/media/analysis/index/nha-mac-nhan-vat-giai-thoai.png");
+}
+// đàng ngoài
+.my-slide-index-analysis-slide2:nth-child(1) {
+  background: url("/media/analysis/index/dang-ngoai-kinh-te-chinh-tri.png");
+}
+.my-slide-index-analysis-slide2:nth-child(2) {
+  background: url("/media/analysis/index/dang-ngoai-vat-dung-do-cu.png");
+}
+.my-slide-index-analysis-slide2:nth-child(3) {
+  background: url("/media/analysis/index/dang-ngoai-trang-phuc.png");
+}
+.my-slide-index-analysis-slide2:nth-child(4) {
+  background: url("/media/analysis/index/dang-ngoai-phong-tuc-le-nghi.png");
+}
+.my-slide-index-analysis-slide2:nth-child(5) {
+  background: url("/media/analysis/index/dang-ngoai-kien-truc.png");
+}
+.my-slide-index-analysis-slide2:nth-child(6) {
+  background: url("/media/analysis/index/dang-ngoai-nhan-vat-giai-thoai.png");
+}
+// Đàng Trong
+.my-slide-index-analysis-slide3:nth-child(1) {
+  background: url("/media/analysis/index/dang-trong-kinh-te-chinh-tri.png");
+}
+.my-slide-index-analysis-slide3:nth-child(2) {
+  background: url("/media/analysis/index/dang-trong-vat-dung-do-cu.png");
+}
+.my-slide-index-analysis-slide3:nth-child(3) {
+  background: url("/media/analysis/index/dang-trong-trang-phuc.png");
+}
+.my-slide-index-analysis-slide3:nth-child(4) {
+  background: url("/media/analysis/index/dang-trong-phong-tuc-le-nghi.png");
+}
+.my-slide-index-analysis-slide3:nth-child(5) {
+  background: url("/media/analysis/index/dang-trong-kien-truc.png");
+}
+.my-slide-index-analysis-slide3:nth-child(6) {
+  background: url("/media/analysis/index/dang-trong-nhan-vat-giai-thoai.png");
+}
+// Tây Sơn - nhà nguyễn
+.my-slide-index-analysis-slide4:nth-child(1) {
+  background: url("/media/analysis/index/tay-son-nha-nguyen-kinh-te-chinh-tri.png");
+}
+.my-slide-index-analysis-slide4:nth-child(2) {
+  background: url("/media/analysis/index/tay-son-nha-nguyen-vat-dung-do-cu.png");
+}
+.my-slide-index-analysis-slide4:nth-child(3) {
+  background: url("/media/analysis/index/tay-son-nha-nguyen-trang-phuc.png");
+}
+.my-slide-index-analysis-slide4:nth-child(4) {
+  background: url("/media/analysis/index/tay-son-nha-nguyen-phong-tuc-le-nghi.png");
+}
+.my-slide-index-analysis-slide4:nth-child(5) {
+  background: url("/media/analysis/index/tay-son-nha-nguyen-kien-truc.png");
+}
+.my-slide-index-analysis-slide4:nth-child(6) {
+  background: url("/media/analysis/index/tay-son-nha-nguyen-nhan-vat-giai-thoai.png");
+}
+
+.my-slide-index-analysis-h1 {
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+.my-slide-index-analysis-p {
+  color: #333;
+  text-align: justify;
+  font-size: 18px;
+  padding: 30px;
+}
+
+.my-slide-index-analysis-slide-number {
+  color: #ccc;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 38px;
+  font-weight: bold;
+}
+.my-slide-index-analysis-slide-p {
+  color: #ccc;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.my-slide-index-analysis-slide-btn {
+  background-color: #ccc;
+  padding: 10px 10px 12px 10px;
+  border-radius: 5px;
+  width: 120px;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 16px;
+  &:hover {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+@-webkit-keyframes my-slide-index-analysis {
+  0% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: 0vw;
+  }
+  21% {
+    margin-left: -50vw;
+  }
+  41% {
+    margin-left: -50vw;
+  }
+  42% {
+    margin-left: -100vw;
+  }
+  62% {
+    margin-left: -100vw;
+  }
+  63% {
+    margin-left: -150vw;
+  }
+  83% {
+    margin-left: -150vw;
+  }
+  84% {
+    margin-left: -200vw;
+  }
+  99% {
+    margin-left: -200vw;
+  }
+  //   margin-left: -250vw;
+  // }
+}

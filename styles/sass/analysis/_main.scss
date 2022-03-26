@@ -1,11 +1,16 @@
 @import "./component_index";
 @import "./navmenuanalysis";
 @import "./news";
+@import "./index_analysis";
 
 .analysis {
   &-baner {
-    background-color: #333;
-    height: 360px;
+    background: url("/media/analysis/slideshow-baner-1.jpg");
+    width: 100vw;
+    height: 25vw;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
   }
   &-navbar {
     margin: 50px 15%;

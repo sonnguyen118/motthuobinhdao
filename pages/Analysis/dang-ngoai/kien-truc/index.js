@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import Analysis from "../../index";
+import Analysis from "../../../Components/Analysis";
 import Image from "next/image";
 import Link from "next/link";
 import "react-h5-audio-player/lib/styles.css";

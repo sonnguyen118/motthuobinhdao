@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
           />
           <meta charset="utf-8" />
           <link rel="icon" href="/media/logo-red.png" />
+
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
           <meta

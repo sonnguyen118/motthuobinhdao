@@ -263,7 +263,9 @@ export default function Layout({ title, children, description }) {
                   onMouseEnter={onMouseEnterHandler}
                   onMouseLeave={onMouseLeaveHandler}
                 >
-                  <span className={navbar ? "" : "color-black"}>Dự Án</span>
+                  <Link href={`/Project`} passHref>
+                    <span className={navbar ? "" : "color-black"}>Dự Án</span>
+                  </Link>
                   <ul className="submenu">
                     <li className="submenu-col">
                       <a href="#">

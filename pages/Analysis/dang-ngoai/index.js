@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import Analysis from "../index";
+import Analysis from "../../Components/Analysis";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";

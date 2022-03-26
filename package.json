@@ -13,8 +13,10 @@
     "js-cookie": "^3.0.1",
     "next": "12.1.0",
     "react": "17.0.2",
+    "react-compare-slider": "^2.2.0",
     "react-dom": "17.0.2",
     "react-h5-audio-player": "^3.8.3",
+    "react-slideshow-image": "^3.7.0",
     "sass": "^1.49.9"
   },
   "devDependencies": {

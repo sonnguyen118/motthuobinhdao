@@ -11,3 +11,7 @@ npm i react-h5-audio-player
 
 
 npm install @madzadev/audio-player
+k cài 9dc
+
+
+npm i react-compare-slider
