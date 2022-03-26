@@ -822,9 +822,9 @@ const Index = () => {
               <p className="my-slide-index-analysis-slide-p">
                 Trang Phục Nhà Mạc
               </p>
-            </div>
-            <div className="my-slide-index-analysis-slide-btn">
-              Đi Tới Bài Viết
+              <div className="my-slide-index-analysis-slide-btn">
+                Đi Tới Bài Viết
+              </div>
             </div>
             <div className="my-slide-index-analysis-slide2">
               <p className="my-slide-index-analysis-slide-number">ĐÀNG NGOÀI</p>

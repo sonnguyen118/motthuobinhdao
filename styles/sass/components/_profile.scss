@@ -1,0 +1,197 @@
+.profile {
+  &-baner {
+    background-image: url("/media/project/background-2.png");
+    height: 400px;
+    width: 100vw;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // z-index: 0;
+  }
+  &-header {
+    position: relative;
+    z-index: 9;
+    margin: 0 15%;
+    padding-top: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    // margin-top: 200px;
+    border-bottom: 1px solid #474544;
+    &-s {
+      display: flex;
+      align-items: center;
+    }
+    &-img {
+      background-image: url("/media/project/background-2.png");
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+      border: 3px solid #fff;
+    }
+    &-name {
+      font-size: 28px;
+      margin-top: 100px;
+      margin-left: 80px;
+      font-weight: bold;
+      color: #000;
+    }
+    &-edit {
+      background-color: #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      margin-top: 100px;
+      margin-left: 80px;
+      &-icon {
+        font-size: 24px;
+      }
+      &-span {
+        font-size: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &-main {
+    // height: 1000px;
+    margin: 0 15% 80px 15%;
+    display: flex;
+    margin-top: 20px;
+    &-menu {
+      width: 20%;
+      &-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        &-img {
+          background-image: url("/media/project/background-2.png");
+          height: 80px;
+          width: 80px;
+          border-radius: 50%;
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover;
+          border: 1px solid #fff;
+        }
+        &-title {
+          margin-left: 20px;
+          &-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+          }
+          &-sub {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+          }
+        }
+      }
+      &-list {
+        &:hover {
+          cursor: pointer;
+        }
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        &-icon {
+          font-size: 20px;
+        }
+        &-p {
+          font-size: 18px;
+          margin-left: 20px;
+        }
+      }
+    }
+    &-block {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      width: 80%;
+      margin-left: 20px;
+      padding: 30px;
+      &-title {
+        &-name {
+          font-size: 24px;
+          font-weight: bold;
+          color: black;
+        }
+        &-sub {
+          font-size: 18px;
+          // font-weight: bold;
+          color: #555;
+          padding-bottom: 5px;
+        }
+        border-bottom: solid 1px #ccc;
+      }
+      &-main {
+        margin-top: 20px;
+        display: flex;
+        &-infor {
+          display: flex;
+          margin-left: 50px;
+          width: 60%;
+          &-1 {
+            &-p {
+              font-size: 18px;
+              // font-weight: bold;
+              color: black;
+              text-align: right;
+              margin-bottom: 15px;
+            }
+          }
+          &-2 {
+            margin-left: 50px;
+            &-p {
+              font-size: 18px;
+              font-weight: bold;
+              color: black;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        &-image {
+          &-edit {
+            margin-left: 45px;
+            background-color: #f5f5f5;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            &-icon {
+              font-size: 30px;
+              margin-top: 22px;
+              margin-left: 25px;
+            }
+          }
+          &-btn {
+            font-size: 20px;
+            text-align: center;
+            background-color: #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            width: 120px;
+            margin: 0 auto;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          &-p {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

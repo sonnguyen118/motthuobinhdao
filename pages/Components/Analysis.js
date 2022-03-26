@@ -221,7 +221,7 @@ const Analysis = ({ children }) => {
                   : "analysis-navbar-menu-text"
               }
             >
-              Tây Sơn - Tiền Nguyễn
+              Tây Sơn - Nhà Nguyễn
             </div>
           </Link>
         </div>

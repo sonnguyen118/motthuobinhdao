@@ -1059,6 +1059,9 @@
   }
 }
 @include responsive_456 {
+  .noselect {
+    display: none;
+  }
   .home {
     &__video {
       width: 100%;
@@ -1180,6 +1183,9 @@
   }
 }
 @include responsive_425 {
+  .noselect {
+    display: none;
+  }
   .home {
     &__video {
       width: 100%;
@@ -1301,6 +1307,9 @@
   }
 }
 @include responsive_375 {
+  .noselect {
+    display: none;
+  }
   .home {
     &__video {
       width: 100%;
@@ -1426,6 +1435,9 @@
   }
 }
 @include responsive_320 {
+  .noselect {
+    display: none;
+  }
   .home {
     &__video {
       width: 100%;
@@ -1550,6 +1562,9 @@
   }
 }
 @include responsive_280 {
+  .noselect {
+    display: none;
+  }
   .home {
     &__video {
       width: 100%;
@@ -1675,6 +1690,9 @@
   }
 }
 @include responsive_200 {
+  .noselect {
+    display: none;
+  }
   .home {
     &__video {
       width: 100%;

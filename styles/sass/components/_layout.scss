@@ -801,7 +801,7 @@ header.scroll nav ul li.first-level.right span {
     position: fixed;
   }
   .navbar-mobile {
-    z-index: 100000;
+    z-index: 1000;
     margin: 0;
     top: calc(100vh - 80px);
     width: 100vw;
