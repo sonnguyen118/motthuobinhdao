@@ -430,6 +430,23 @@ export default function Layout({ title, children, description }) {
                     )}
                   </Link>
                 </li>
+                <li className="navbar-mobile-menu-item">
+                  <Link href={"/menu"} passHref>
+                    {router.pathname.includes("menu") ? (
+                      <div className="navbar-mobile-menu-link navbar-mobile-menu-link-is-active">
+                        <i className="navbar-mobile-menu-link-icon fas fa-align-justify active-click-menu" />
+                        <p className="navbar-mobile-menu-name active-click-menu">
+                          Menu
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="navbar-mobile-menu-link ">
+                        <i className="navbar-mobile-menu-link-icon fas fa-align-justify" />
+                        <p className="navbar-mobile-menu-name">Menu</p>
+                      </div>
+                    )}
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
